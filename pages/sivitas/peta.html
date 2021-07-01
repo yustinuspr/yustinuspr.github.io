@@ -154,7 +154,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar  elevation-4" style="background-color: #FDCB2C;">
       <!-- Brand Logo -->
-      <a href="./index.html" class="brand-link">
+      <a href="../index.html" class="brand-link">
         <img src="../../dist/img/subs/ugm.png" alt="Logo UGM" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">Gedung Pusat UGM</span>
@@ -171,7 +171,7 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">
+              <a href="../index.html" class="nav-link">
                 <img src="../../dist/img/subs/home.png" width="22px" alt="icon_home">
                 <p>
                   Beranda
@@ -1026,7 +1026,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "./L1Tamu.geojson"
+          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai1"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1193,23 +1193,22 @@
     map.on('click', 'Lantai 1', function (e) {
       // Hanya muncul jika lantai 2 dan 3 dimatikan
       if (document.getElementById("btn-lantai-2").className == '' && document.getElementById("btn-lantai-3").className == '') {
-        if (e.features[0].properties.nama_fitur.length !== 0) {
-          // Kalau id jalurnya tidak 1000
-          if (e.features[0].properties.id_jalur != 1000) {
-            // Pasang idMulai di sini
-            idMulai = parseInt(e.features[0].properties.id_jalur);
-            // Memunculkan pop up yang ada buttonnya
-            popup = new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-                    .addTo(map);
-          } else { // Kalau id jalurnya 1000
-            // Dikasih berupa nama saja
-            popup = new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML(e.features[0].properties.nama_fitur)
-                    .addTo(map);
-          }
+        // Kalau id jalurnya tidak 1000
+        if (e.features[0].properties.id_jalur != 1000) {
+          // Pasang idMulai di sini
+          idMulai = parseInt(e.features[0].properties.id_jalur);
+          // Memunculkan pop up yang ada buttonnya
+          popup = new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+            .addTo(map);
+        }
+        else { // Kalau id jalurnya 1000
+          // Dikasih berupa nama saja
+          popup = new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.nama_fitur)
+            .addTo(map);
         }
       }
     });
