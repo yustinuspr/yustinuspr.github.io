@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a7077-8aa5-4d12-a70e-32b926fdbd6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/civitas/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/kontak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/pdf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/peta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/tentang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/civitas/widgets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/adminlte.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/adminlte.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/adminlte.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/adminlte.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/adminlte.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/adminlte.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/adminlte.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/adminlte.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/adminlte.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/adminlte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/adminlte.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/adminlte.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/adminlte.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/adminlte.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/adminlte.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/adminlte.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tamu/peta.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tamu/peta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tentang.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tentang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
