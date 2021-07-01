@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a7077-8aa5-4d12-a70e-32b926fdbd6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/foot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/post.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
