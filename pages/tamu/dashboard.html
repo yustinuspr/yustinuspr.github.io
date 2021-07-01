@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | ChartJS</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<style type="text/css"> #info {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #222;
+  background: #fff;
+}
+
+#lngLatText {
+  margin: 0px auto;
+  width: 80%;
+  font-size: 12px;
+  text-align: center;
+  color: #222;
+  background: #fff;
+}
+
+#menu {
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu a {
+  font-size: 13px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#menu a:last-child {
+  border: none;
+}
+
+#menu a:hover {
+  background-color: #f8f8f8;
+  color: #404040;
+}
+
+#menu a.active {
+  background-color: #3887be;
+  color: #ffffff;
+}
+
+#menu a.active:hover {
+  background: #3074a4;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form{
+position:absolute;
+z-index:3;
+bottom:40px;
+}
+
+#map {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+}
+
+.marker {
+display: block;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+padding: 0;
+background-color: red;
+width:5px;
+height:5px;
+}
+
+#pauseBtn{
+display:none;
+position:absolute;
+z-index:3;
+bottom:40px;
+left:20px;
+}
+
+#stopBtn{
+display:none;
+position:absolute;
+z-index:3;
+bottom:40px;
+left:80px;
+}
+
+;
+</style>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-4" style="background-color: #FDCB2C;">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="../dist/img/subs/ugm.png"
+           alt="Logo UGM"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Gedung Pusat UGM</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="./dashboard.html" class="nav-link active">
+              <img src="./../dist/img/subs/home.png" width="26px" alt="icon_home">
+              <p>
+                Beranda
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./pdf.html" class="nav-link">
+              <img src="./../dist/img/subs/guidance.png" width="26px" alt="icon_guidance">
+              <p>
+                Panduan
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./charts/chartjs.html" class="nav-link">
+              <img src="./../dist/img/subs/map.png" width="26px" alt="icon_map">
+              <p>
+                Peta
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./tentang.html" class="nav-link">
+              <img src="./../dist/img/subs/about.png" width="26px" alt="icon_about">
+              <p>
+                Tentang
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./widgets.html" class="nav-link">
+              <img src="./../dist/img/subs/contact.png" width="26px" alt="icon_contact">
+              <p>
+                Kontak
+
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-image: url('./../dist/img/asset/gedung.jpg');background-size:contain;
+  background-position:center; background-repeat: no-repeat;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="min-height: 638px;text-align: center;">
+      <h1>PETA RUANGAN 3D GEDUNG PUSAT UGM</h1>
+      <!-- <div class="container-fluid" >
+
+
+
+      </div> -->
+      <!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid" >
+        <div class="row">
+        </div>
+        <!-- /.row -->
+
+<!--  <pre id="info">
+  <textarea id="lngLatText"></textarea> <br/>
+  <button onClick="copy()">Copy</button>
+</pre>
+<form autocomplete="off" action="javascript:showTrack(myInput.value)">
+    <div class="textbox" style="width:100px;">
+      <input id="myInput" type="text">
+    </div>
+    <input id="submitShowTrack" type="submit" value="Show Track">
+  </form>
+
+  -->
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Add Content Here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="./../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="./../plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./../dist/js/demo.js"></script>
+<!-- page script -->
+
+<script>
+  //Access token mapbox
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiYmVsbGFhcHJtdCIsImEiOiJjajF6c2l0cmMwMWQxMnFvNWNkMWtkcnI5In0.m_mtqZdj3sX0CAnHAZWgcg";
+
+//Ukuran titik-titik evakuasi
+const ukuranKotak = "0.000001"
+
+//Ukuran pengguna
+const ukuranTambahanOrang = "0.000001"
+
+// Timer setInterval
+var timer;
+
+// Variabel state apakah sedang dilakukan evakuasi atau tidak
+var playing = false;
+var paused = false;
+
+// ID mulai jalur evakuasi
+var idMulai = -1;
+
+// Pop up nama ruangan
+var popup;
+
+// Batas peta
+var bounds = [
+  [110.37254, -7.7779], // Southwest coordinates
+  [110.39454, -7.7179] // Northeast coordinates
+];
+
+// Link csv evakuasi
+var url = "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Jalur%20Evakuasi.csv";
+
+// Semua data csv masuk ke sini
+var csvData = new Array();
+
+// Load CSV
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: url,
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
+
+// Load CSV
+function processData(data){
+	var jsonObject = data.split(/\r?\n|\r/);
+  for (var i = 0; i < jsonObject.length; i++) {
+    csvData.push(jsonObject[i].split(','));
+  }
+}
+
+// Fungsi untuk menunjukkan hanya pada salah satu lantai
+function showOneLantaiOnly(lantai) {
+  for (var i = 1; i <= 3; i++) {
+    if (lantai != i.toString() && document.getElementById("btn-lantai-" + i.toString()).className == 'active') {
+      document.getElementById("btn-lantai-" + i.toString()).click();
+    }
+    if (lantai == i.toString() && document.getElementById("btn-lantai-" + i.toString()).className == '') {
+      document.getElementById("btn-lantai-" + i.toString()).click();
+    }
+  }
+}
+
+// Fungsi untuk menunnjukkan semua lantai
+function showAllLantai() {
+  for (var i = 1; i <= 3; i++) {
+    if (document.getElementById("btn-lantai-" + i.toString()).className == '') {
+      document.getElementById("btn-lantai-" + i.toString()).click();
+    }
+  }
+}
+
+// Mulai evakuasi (fungsi yang dipanggil oleh button di dalam pop up)
+function evacuate(){
+	console.log(idMulai);
+  popup.remove();
+	showTrack(idMulai);
+}
+
+// Pause evakuasi
+function pause(){
+	paused = true;
+  document.getElementById("pauseBtn").innerHTML = "Resume";
+}
+
+// Stop evakuasi
+function stop(){
+	playing = false;
+  paused = false;
+  document.getElementById("pauseBtn").innerHTML = "Pause";
+  document.getElementById("pauseBtn").style.display = "none";
+  document.getElementById("stopBtn").style.display = "none";
+  window.clearInterval(timer);
+  removeTrack();
+}
+
+// Resume evakuasi
+function resume(){
+	paused = false;
+  document.getElementById("pauseBtn").innerHTML = "Pause";
+}
+
+// Fungsi yang dipanggil oleh pause button
+function togglePauseBtn(){
+	if(paused)
+  	resume();
+  else
+  	pause();
+}
+
+/*
+function showTitik() {
+  //Untuk menunjukkan titik-titik arah
+  for (var d of csvData) {
+    if (d[6] == 3) {
+      if (d == "")
+        continue;
+      var thisx = parseFloat(d[2]);
+      var thisy = parseFloat(d[3]);
+      var el = document.createElement('div');
+      el.innerHTML = d[0];
+      el.className = 'marker';
+      new mapboxgl.Marker(el).setLngLat([thisx, thisy]).addTo(map);
+    }
+  }
+}
+ */
+
+// Kode utama evakuasi -------------------- start ------------------
+function showTrack(startId) {
+	// Cek apakah id mulai valid
+  if (isNaN(startId) || startId == "" || startId >= csvData.length || startId<0 ) {
+    alert("Invalid Data");
+    return;
+  }
+
+	// Jika masih running, tidak bisa running baru
+  if(playing){
+  	alert("Still running");
+    return;
+  }
+
+  // Bersihkan semua jejak sebelum memulai evakuasi baru
+  removeTrack();
+
+  // Start point dimulai dari idMulai
+  var startPoint = parseInt(startId);
+  // Point selanjutnya (diberi nama end point) diambil dari data CSV
+  var endPoint = csvData[startPoint][5];
+
+	// Titik track dibagi tiga variabel (bukan satu) karena tiap lantai punya layernya sendiri
+  // Variabel jalurOrang digunakan untuk mendata urutannya.
+  /* How it works
+
+     Pertama, diambil startPoint dimulai dari id mulai, lalu end point dari point selanjutnya yang diambil dari csv.
+
+     Kemudian koordinat titik-titik antara kedua titik dihitung, tiap titik berjarak 0.000009 dari koordinat.
+
+     Tiap titik dimasukkan ke variabel titikTrack masing-masing lantai. Dalam waktu yang sama dengan itu, variabel jalurOrang mencatat dengan
+
+     format[nomor lantai, nomor index titik]. Misal startPoint id 1 (Lantai 3) endPoint berada di id 2. Di antaranya ada 4 titik misalnya.
+
+     Titik pertama T1 dengan koordinat [x1,y1,z1] dimasukkan ke titiktrack3. Bersamaan dengan itu, jalurOrang mencatat jalurnya [3,0] karena
+
+    ada di lantai 3 terus di index pertamanya titiktrack3.
+
+     Isi titiktrack3 :
+     [
+     		[x1,y1,z1] --> index 0
+     ]
+
+     Isi jalurOrang :
+     [
+     		[3,0]
+     ]
+
+     Berlanjut seterusnya sampai keempat titik masuk semua.
+
+     Isi titiktrack3 :
+     [
+     		[x1,y1,z1], --> index 0 (T1)
+        [x2,y2,z2], --> index 1 (T2)
+        [x3,y3,z3]. --> index 2 (T3)
+        [x4,y4,z4] --> index 3 (T4)
+     ]
+
+     Isi jalurOrang :
+     [
+     		[3,0],
+        [3,1],
+        [3,2],
+        [3,3],
+     ]
+
+     Jalur ini selesai. Karena end pointnya bukan -1 (titik akhir evakuasi/titik kumpul), pengguna mengulang proses dari awal lagi tapi
+
+    dengan startPoint dari endPoint yang sebelumnya. Jadi start point saat ini = 2. Katakanlah endpoint selanjutnya adalah id 3. Diulangi
+
+    lagi prosesnya. Ini yang terjadi apabila ganti lantai dilakukan. Dimisalkan id 4 adalah lantai 2, end point selanjutnya adalah endpoint 5.
+
+    Maka data dimasukkan ke titikTrack2.
+
+     Isi titiktrack3 :
+     [
+     		[x1,y1,z1], --> index 0 (T1)
+        [x2,y2,z2], --> index 1 (T2)
+        [x3,y3,z3]. --> index 2 (T3)
+        [x4,y4,z4] --> index 3 (T4)
+        ...   --> Data
+        ...   --> dari
+        ...   --> startpoint id 2 ke 3  dan startpoint 3 ke 4
+     ]
+
+     Isi titiktrack2 :
+     [
+     		[x20,y20,z20], --> index 0
+        [x21,y21,z21], --> index 1
+        [x22,y22,z22]. --> index 2
+        [x23,y23,z23] --> index 3
+     ]
+
+     Isi jalurOrang :
+     [
+     		[3,0],
+        [3,1],
+        [3,2],
+        [3,3],
+        ...
+        ...
+        ...
+        [2,0]
+        [2,1]
+        [2,2]
+     ]
+
+
+  :*/
+  var jalurOrang = [];
+  var titikTrack1 = [];
+  var titikTrack2 = [];
+  var titikTrack3 = [];
+
+  //untuk hitung untuk indexing
+  var count1 = 0;
+  var count2 = 0;
+  var count3 = 0;
+
+	// untuk hitung loop
+	var countLoop = 0;
+
+  // Untuk log titik-titik di console (dicek melalui Inspect pada browser)
+  var jalurStr = "";
+
+  do {
+
+  // Cek apakah terjadi looping
+  if(countLoop>csvData.length){
+  	alert("There has been a loop at id: " + startPoint  + " , check your data.");
+    break;
+  }
+
+  	// Untuk log titik-titik di console
+  	jalurStr+= startPoint + " ";
+
+    // x is longitude, y is latitude
+    var z1 = csvData[startPoint][7];
+    var y1 = csvData[startPoint][3];
+    var x1 = csvData[startPoint][2];
+    var z2 = csvData[endPoint][7];
+    var y2 = csvData[endPoint][3];
+    var x2 = csvData[endPoint][2];
+
+    var a = x2 - x1;
+    var b = y2 - y1;
+
+		// Hitung jarak dengan pythagoras
+    var miring = Math.sqrt(a * a + b * b);
+
+    // Hitung jumlah titik antara startPoint dan endPoint
+    var jml_bagi = Math.floor(miring / 0.000009);
+
+
+    // Cek apakah datanya terlalu besar akibat salah input koordinat
+    if(jml_bagi > 10000){
+    	alert("There has been data overflow on id : " + startPoint +", possibly by wrong coordinate assignment");
+      break;
+    }
+
+		// Buat titik-titiknya
+    for (var i = 0; i < jml_bagi; i++) {
+      var t = i / jml_bagi;
+      var x = parseFloat(x1) + (parseFloat(x2) - parseFloat(x1)) * t;
+      var y = parseFloat(y1) + (parseFloat(y2) - parseFloat(y1)) * t;
+      var z = parseFloat(z1) + (parseFloat(z2) - parseFloat(z1)) * t;
+
+			// Assign titik-titiknya ke variabel titiktrack yang sesuai dan dicatat ke variabel jalurOrang
+      if (csvData[startPoint][6] == 1) {
+        titikTrack1.push([x, y, z]);
+        jalurOrang.push([1, count1]);
+        count1++;
+      } else if (csvData[startPoint][6] == 2) {
+        titikTrack2.push([x, y, z]);
+        jalurOrang.push([2, count2]);
+        count2++;
+      } else if (csvData[startPoint][6] == 3) {
+        titikTrack3.push([x, y, z]);
+        jalurOrang.push([3, count3]);
+        count3++;
+      }
+    }
+    startPoint = endPoint;
+    endPoint = csvData[startPoint][5];
+    countLoop++;
+  } while (endPoint > -1);
+
+	// Kalau looping get out
+	if(countLoop>csvData.length){
+    return;
+  }
+
+  console.log(jalurStr)
+
+	// Buat polygon untuk tiap titik jalur ---------- start --------
+
+  var fiturs1 = []
+  var num = 0;
+  // Untuk tiap koordinat di variabel titikTrack
+  for (var coord of titikTrack1) {
+    // num untuk indexing
+    num++;
+
+    // Pasang atas bawah kanan kiri sesuai variabel ukuranKotak
+    var atas = parseFloat(coord[1]) + parseFloat(ukuranKotak);
+    var bawah = parseFloat(coord[1]) - parseFloat(ukuranKotak);
+    var kanan = parseFloat(coord[0]) + parseFloat(ukuranKotak);
+    var kiri = parseFloat(coord[0]) - parseFloat(ukuranKotak);
+
+    // JSON yang mau dimasukkan
+    var jsonDataFitur = {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          []
+        ]
+      },
+      properties: {
+        id: num,
+        // Ambil ketinggian dari koordinat (index 2 = z)
+        tinggi_das : parseFloat(coord[2]),
+        ketinggian : parseFloat(coord[2]) + 0.25
+      }
+    };
+
+    // Masukkan koordinat atas bawah kiri kanan titik tersebut
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    fiturs1.push(jsonDataFitur);
+  }
+
+  // Sama
+  var fiturs2 = []
+  var num = 0;
+  for (var coord of titikTrack2) {
+    //debugger;
+    num++;
+    var atas = parseFloat(coord[1]) + parseFloat(ukuranKotak);
+    var bawah = parseFloat(coord[1]) - parseFloat(ukuranKotak);
+    var kanan = parseFloat(coord[0]) + parseFloat(ukuranKotak);
+    var kiri = parseFloat(coord[0]) - parseFloat(ukuranKotak);
+    //debugger;
+    var jsonDataFitur = {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          []
+        ]
+      },
+      properties: {
+        id: num,
+        tinggi_das : parseFloat(coord[2]),
+        ketinggian : parseFloat(coord[2]) + 0.25
+      }
+    };
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    fiturs2.push(jsonDataFitur);
+  }
+
+  // Sama
+  var fiturs3 = []
+  var num = 0;
+  for (var coord of titikTrack3) {
+    //debugger;
+    num++;
+    var atas = parseFloat(coord[1]) + parseFloat(ukuranKotak);
+    var bawah = parseFloat(coord[1]) - parseFloat(ukuranKotak);
+    var kanan = parseFloat(coord[0]) + parseFloat(ukuranKotak);
+    var kiri = parseFloat(coord[0]) - parseFloat(ukuranKotak);
+    //debugger;
+    var jsonDataFitur = {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          []
+        ]
+      },
+      properties: {
+        id: num,
+        tinggi_das : parseFloat(coord[2]),
+        ketinggian : parseFloat(coord[2]) + 0.25
+      }
+    };
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, bawah]);
+    jsonDataFitur.geometry.coordinates[0].push([kanan, atas]);
+    jsonDataFitur.geometry.coordinates[0].push([kiri, atas]);
+    fiturs3.push(jsonDataFitur);
+  }
+
+
+  // Buat polygon untuk tiap titik jalur ---------- end --------
+
+
+	// Add source titik track 1, 2, dan 3
+  map.addSource('titiktrack1', {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": fiturs1
+    }
+  });
+
+  map.addSource('titiktrack2', {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": fiturs2
+    }
+  });
+
+  map.addSource('titiktrack3', {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": fiturs3
+    }
+  });
+
+	// Add source data pengguna
+  var dataOrang = [fiturs1[0]];
+  map.addSource('sourceOrang', {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": dataOrang
+    }
+  });
+
+  // Add Layer semua source
+  map.addLayer({
+    id: "track-1",
+    type: "fill-extrusion",
+    source: "titiktrack1",
+    paint: {
+      "fill-extrusion-color": "#0000ff",
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.7
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+  });
+
+  map.addLayer({
+    id: "track-2",
+    type: "fill-extrusion",
+    source: "titiktrack2",
+    paint: {
+      "fill-extrusion-color": "#0000ff",
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.7
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+  });
+
+  map.addLayer({
+    id: "track-3",
+    type: "fill-extrusion",
+    source: "titiktrack3",
+    paint: {
+      "fill-extrusion-color": "#0000ff",
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.7
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+  });
+
+  map.addLayer({
+    id: "orang",
+    type: "fill-extrusion",
+    source: "sourceOrang",
+    paint: {
+      "fill-extrusion-color": "#000000",
+      "fill-extrusion-height": 4.5,
+      "fill-extrusion-base": 3,
+      "fill-extrusion-opacity": 1
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+
+  });
+
+  // Pertama yang ditunjukkan semua lantai dulu (tampilan normal)
+  showAllLantai();
+  // Lalu baru ditunjukkan hanya pada satu lantai
+  showOneLantaiOnly(jalurOrang[0][0].toString())
+  // Set zoom
+  map.setZoom(20);
+
+	// Untuk panning map
+  if (jalurOrang[0][0] == 1) {
+    map.panTo(titikTrack1[0]);
+  } else if (jalurOrang[0][0] == 2) {
+    map.panTo(titikTrack2[0]);
+  } else if (jalurOrang[0][0] == 3) {
+    map.panTo(titikTrack3[0]);
+  }
+
+	// Fungsi setTimeOut agar ada jeda dua detik sebelum dimulai (rentang waktu untuk zoom dan panning)
+  setTimeout(function() {
+    // i adalah posisi di array features
+    var i = 0;
+
+    // Munculkan tombol pause dan stop
+    document.getElementById("pauseBtn").style.display = "block";
+    document.getElementById("stopBtn").style.display = "block";
+    // playing true
+    playing = true;
+
+    // Fungsi setinterval agar looping terjadi terus tapi jeda tiap 150 milliseconds, dipasang ke variabel timer
+    timer = window.setInterval(function() {
+
+    //Jalankan hanya jika modenya play dan tidak pause
+    if(playing && !paused){
+
+    	// Selama i masih kurang dari jumlah data dari jalurOrang
+      if (i < jalurOrang.length) {
+
+      	// lantaiNow = lantai sekarang
+        var lantaiNow = jalurOrang[i][0];
+        // show lantai tersebut
+        showOneLantaiOnly(lantaiNow.toString())
+
+        // Kalau lantai 1
+        if (lantaiNow == 1) {
+        	//koordinat data orang dipasang persis sama seperti kotak yang sedang dipijak
+          dataOrang = [fiturs1[jalurOrang[i][1]]];
+
+          // Pasang tinggi dasar orang
+          map.setPaintProperty('orang', 'fill-extrusion-base', titikTrack1[jalurOrang[i][1]][2]);
+
+          // Pasang ketinggian orang (1.5 m)
+          map.setPaintProperty('orang', 'fill-extrusion-height', titikTrack1[jalurOrang[i][1]][2] + 1.5);
+
+        }
+
+        // untuk lantai 2
+        else if (lantaiNow == 2) {
+          dataOrang = [fiturs2[jalurOrang[i][1]]];
+          map.setPaintProperty('orang', 'fill-extrusion-base', titikTrack2[jalurOrang[i][1]][2]);
+          map.setPaintProperty('orang', 'fill-extrusion-height', titikTrack2[jalurOrang[i][1]][2] + 1.5);
+        }
+
+        // untuk lantai 3
+        else if (lantaiNow == 3) {
+          dataOrang = [fiturs3[jalurOrang[i][1]]];
+          map.setPaintProperty('orang', 'fill-extrusion-base', titikTrack3[jalurOrang[i][1]][2]);
+          map.setPaintProperty('orang', 'fill-extrusion-height', titikTrack3[jalurOrang[i][1]][2] + 1.5);
+        }
+
+        // Atur ukuran pengguna ----- start ------
+
+        var atas2 = dataOrang[0].geometry.coordinates[0][0][1];
+        var kiri2 = dataOrang[0].geometry.coordinates[0][0][0];
+        var bawah2 = dataOrang[0].geometry.coordinates[0][1][1];
+        var kanan2 = dataOrang[0].geometry.coordinates[0][2][0];
+
+        //debugger;
+
+        atas2+= parseFloat(ukuranTambahanOrang);
+        kiri2-= parseFloat(ukuranTambahanOrang);
+        bawah2-= parseFloat(ukuranTambahanOrang);
+        kanan2+= parseFloat(ukuranTambahanOrang);
+
+
+        dataOrang[0].geometry.coordinates[0][0] = [kiri2,atas2];
+        dataOrang[0].geometry.coordinates[0][1] = [kiri2,bawah2];
+        dataOrang[0].geometry.coordinates[0][2] = [kanan2,bawah2];
+        dataOrang[0].geometry.coordinates[0][3] = [kanan2,atas2];
+        dataOrang[0].geometry.coordinates[0][4] = [kiri2,atas2];
+
+        // Atur ukuran pengguna ----- end ------
+
+
+        // Panning
+        if (lantaiNow == 1)
+          map.panTo(titikTrack1[jalurOrang[i][1]]);
+        else if (lantaiNow == 2)
+          map.panTo(titikTrack2[jalurOrang[i][1]]);
+        else if (lantaiNow == 3)
+          map.panTo(titikTrack3[jalurOrang[i][1]]);
+        /* if (i < fiturs.length-1){
+          map.setBearing(titikTrack1[i][0],titikTrack1[i][1],titikTrack1[i+1][0],titikTrack1[i+1][1])
+        } */
+
+        // set data orang yang baru
+        map.getSource('sourceOrang').setData({
+          "type": "FeatureCollection",
+          "features": dataOrang
+        });
+
+        // i tambah 1, ulangi sampai i = jumlah data di dataOrang
+        i++;
+      }
+
+      // Kalau i > jumlahdataOrang
+      else {
+      	// clear interval
+        window.clearInterval(timer);
+
+        // mode tidak playing dan tidak pause
+        playing = false;
+        paused = false;
+      }
+      }
+    }, 150);
+  }, 2000)
+}
+// Kode utama evakuasi -------------------- end ------------------
+
+
+// Remove jalur evakuasi dan orang
+function removeTrack() {
+  if (map.getLayer("track-1")) {
+    map.removeLayer("track-1");
+  }
+  if (map.getLayer("track-2")) {
+    map.removeLayer("track-2");
+  }
+  if (map.getLayer("track-3")) {
+    map.removeLayer("track-3");
+  }
+  if (map.getLayer("orang")) {
+    map.removeLayer("orang");
+  }
+  if (map.getSource("sourceOrang")) {
+    map.removeSource("sourceOrang");
+  }
+  if (map.getSource("titiktrack1")) {
+    map.removeSource("titiktrack1");
+  }
+  if (map.getSource("titiktrack2")) {
+    map.removeSource("titiktrack2");
+  }
+  if (map.getSource("titiktrack3")) {
+    map.removeSource("titiktrack3");
+  }
+}
+
+// Load map
+var map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/streets-v11",
+  center: [110.37854, -7.7679],
+  zoom: 15.99,
+  pitch: 15,
+  bearing: 15,
+  antialias: true,
+  maxBounds: bounds // Sets bounds as max
+});
+
+// Disable default map keyboard function
+map.keyboard.disable();
+
+// Map on load
+map.on("load", function() {
+
+  // Load geojson ----------- start ---------------
+
+  map.addLayer({
+    id: "Lantai 1",
+    type: "fill-extrusion",
+    source: {
+      type: "geojson",
+      data: "https://raw.githubusercontent.com/bellaayup/BalairungUGM/master/L1New"
+    },
+    paint: {
+      "fill-extrusion-color": ["get", "warna"],
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.5
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+
+  });
+
+  map.addLayer({
+    id: "Lantai 2",
+    type: "fill-extrusion",
+    source: {
+      type: "geojson",
+      data: "https://raw.githubusercontent.com/bellaayup/BalairungUGM/master/L2Baru"
+    },
+    paint: {
+      "fill-extrusion-color": ["get", "warna"],
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.5
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+
+  });
+
+  map.addLayer({
+    id: "Lantai 3",
+    type: "fill-extrusion",
+    source: {
+      type: "geojson",
+      data: "https://raw.githubusercontent.com/bellaayup/BalairungUGM/master/L3New"
+    },
+    paint: {
+      "fill-extrusion-color": ["get", "warna"],
+      "fill-extrusion-height": ["get", "ketinggian"],
+      "fill-extrusion-base": ["get", "tinggi_das"],
+      "fill-extrusion-opacity": 0.5
+    },
+    'layout': {
+      'visibility': 'visible'
+    },
+
+      // Load geojson ----------- end ---------------
+
+  });
+
+
+// New keyboard functions ------------- start -------------
+
+// pixels the map pans when the up or down arrow is clicked
+var deltaDistance = 100;
+
+// degrees the map rotates when the left or right arrow is clicked
+var deltaDegrees = 25;
+
+function easing(t) {
+  return t * (2 - t);
+}
+
+// Converts from degrees to radians.
+function toRadians(degrees) {
+  return degrees * Math.PI / 180;
+}
+
+  map.getCanvas().focus();
+
+  map.getCanvas().addEventListener(
+    'keydown',
+    function(e) {
+      e.preventDefault();
+      if (e.which === 38) {
+        // up
+        map.setZoom(map.getZoom() + 1, {
+          easing: easing
+        });
+      } else if (e.which === 40) {
+        // down
+        map.setZoom(map.getZoom() - 1, {
+          easing: easing
+        });
+      } else if (e.which === 37) {
+        // left
+        map.easeTo({
+          bearing: map.getBearing() - deltaDegrees,
+          easing: easing
+        });
+      } else if (e.which === 39) {
+        // right
+        map.easeTo({
+          bearing: map.getBearing() + deltaDegrees,
+          easing: easing
+        });
+      }
+    },
+    true
+  );
+
+});
+
+// New keyboard functions ------------- end -------------
+
+map.addControl(new mapboxgl.NavigationControl());
+
+/* map.on('click', function(e) {
+  document.getElementById('lngLatText').innerHTML =
+    JSON.stringify(e.lngLat.wrap());
+}); */
+
+// Add lantai button ------------- start ----------------
+
+for (var i = 0; i < 3; i++) {
+
+  var link = document.createElement('a');
+  link.href = '#';
+  link.className = 'active';
+  link.setAttribute("data-nomorlantai", (i + 1).toString());
+  link.id = "btn-lantai-" + (i + 1).toString();
+  link.textContent = "Lantai " + (i + 1).toString();
+
+
+  link.onclick = function(e) {
+    var mapClickedLayer = "Lantai " + this.getAttribute("data-nomorlantai");
+    var trackClickedLayer = "track-" + this.getAttribute("data-nomorlantai");
+    e.preventDefault();
+    e.stopPropagation();
+
+    var visibility = map.getLayoutProperty(mapClickedLayer, 'visibility');
+
+    if (visibility === 'visible') {
+      map.setLayoutProperty(mapClickedLayer, 'visibility', 'none');
+      map.setLayoutProperty(trackClickedLayer, 'visibility', 'none');
+      this.className = '';
+    } else {
+      this.className = 'active';
+      map.setLayoutProperty(mapClickedLayer, 'visibility', 'visible');
+      map.setLayoutProperty(trackClickedLayer, 'visibility', 'visible');
+    }
+  };
+
+  var layers = document.getElementById('menu');
+  layers.appendChild(link);
+
+}
+// Add lantai button ------------- end ----------------
+
+
+// onClick bangunan (keluar pop up) ------ start --------
+map.on('click', 'Lantai 1', function(e) {
+	// Hanya muncul jika lantai 2 dan 3 dimatikan
+  if (document.getElementById("btn-lantai-2").className == '' && document.getElementById("btn-lantai-3").className == '') {
+  // Kalau id jalurnya tidak 1000
+   if(e.features[0].properties.id_jalur!=1000){
+  	// Pasang idMulai di sini
+    idMulai = parseInt(e.features[0].properties.id_jalur);
+    // Memunculkan pop up yang ada buttonnya
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("<p style=\"margin: auto;\">" +  e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+      .addTo(map);
+  }
+  else{ // Kalau id jalurnya 1000
+  // Dikasih berupa nama saja
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(e.features[0].properties.nama_fitur)
+      .addTo(map);
+  }
+  }
+});
+
+// Kursor menjadi telunjuk kalau di atas bangunan
+map.on('mouseenter', 'Lantai 1', function() {
+  map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'Lantai 1', function() {
+  map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'Lantai 2', function(e) {
+  if (document.getElementById("btn-lantai-3").className == '') {
+  if(e.features[0].properties.id_jalur!=1000){
+  	idMulai = parseInt(e.features[0].properties.id_jalur);
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("<p style=\"margin: auto;\">" +  e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+      .addTo(map);
+  }
+  else{
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(e.features[0].properties.nama_fitur)
+      .addTo(map);
+  }
+}
+});
+
+// Change the cursor to a pointer when the mouse is over the states layer.
+map.on('mouseenter', 'Lantai 2', function() {
+  map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'Lantai 2', function() {
+  map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'Lantai 3', function(e) {
+  if(e.features[0].properties.id_jalur!=1000){
+  	idMulai = parseInt(e.features[0].properties.id_jalur);
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML("<p style=\"margin: auto;\">" +  e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+      .addTo(map);
+  }
+  else{
+    popup = new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(e.features[0].properties.nama_fitur)
+      .addTo(map);
+  }
+});
+
+// Change the cursor to a pointer when the mouse is over the states layer.
+map.on('mouseenter', 'Lantai 3', function() {
+  map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'Lantai 3', function() {
+  map.getCanvas().style.cursor = '';
+});
+
+// onClick bangunan (keluar pop up) ------ end --------
+</script>
+</body>
+</html>
