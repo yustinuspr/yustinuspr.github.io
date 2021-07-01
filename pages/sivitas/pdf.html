@@ -11,12 +11,128 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href=".././dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
 </head>
+<style type="text/css"> #info {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #222;
+  background: #fff;
+}
 
+#lngLatText {
+  margin: 0px auto;
+  width: 80%;
+  font-size: 12px;
+  text-align: center;
+  color: #222;
+  background: #fff;
+}
+
+#menu {
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu a {
+  font-size: 13px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#menu a:last-child {
+  border: none;
+}
+
+#menu a:hover {
+  background-color: #f8f8f8;
+  color: #404040;
+}
+
+#menu a.active {
+  background-color: #3887be;
+  color: #ffffff;
+}
+
+#menu a.active:hover {
+  background: #3074a4;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form{
+position:absolute;
+z-index:3;
+bottom:40px;
+}
+
+#map {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+}
+
+.marker {
+display: block;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+padding: 0;
+background-color: red;
+width:5px;
+height:5px;
+}
+
+#pauseBtn{
+display:none;
+position:absolute;
+z-index:3;
+bottom:40px;
+left:20px;
+}
+
+#stopBtn{
+display:none;
+position:absolute;
+z-index:3;
+bottom:40px;
+left:80px;
+}
+
+;
+</style>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
@@ -34,7 +150,7 @@
   <aside class="main-sidebar elevation-4" style="background-color: #FDCB2C;">
     <!-- Brand Logo -->
     <a href="../index.html" class="brand-link">
-        <img src="../dist/img/subs/ugm.png"
+        <img src="../../dist/img/subs/ugm.png"
              alt="Logo UGM"
              class="brand-image img-circle elevation-3"
              style="opacity: .8">
@@ -52,7 +168,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="../index.html" class="nav-link">
-              <img src="./../dist/img/subs/home.png" width="26px" alt="icon_home">
+              <img src="../../dist/img/subs/home.png" width="26px" alt="icon_home">
               <p>
                 Beranda
 
@@ -60,8 +176,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../pdf.html" class="nav-link">
-              <img src="./../dist/img/subs/guidance.png" width="26px" alt="icon_guidance">
+            <a href="./pdf.html" class="nav-link active">
+              <img src="../../dist/img/subs/guidance.png" width="26px" alt="icon_guidance">
               <p>
                 Panduan
 
@@ -69,8 +185,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../peta.html" class="nav-link">
-              <img src="./../dist/img/subs/map.png" width="26px" alt="icon_map">
+            <a href="./peta.html" class="nav-link">
+              <img src="../../dist/img/subs/map.png" width="26px" alt="icon_map">
               <p>
                 Peta
 
@@ -78,8 +194,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="./tentang.html" class="nav-link active">
-              <img src="./../dist/img/subs/about.png" width="26px" alt="icon_about">
+            <a href="./tentang.html" class="nav-link">
+              <img src="../../dist/img/subs/about.png" width="26px" alt="icon_about">
               <p>
                 Tentang
 
@@ -88,7 +204,7 @@
           </li>
           <li class="nav-item">
             <a href="./kontak.html" class="nav-link">
-              <img src="./../dist/img/subs/contact.png" width="26px" alt="icon_contact">
+              <img src="../../dist/img/subs/contact.png" width="26px" alt="icon_contact">
               <p>
                 Kontak
 
@@ -109,7 +225,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-7">
-            <h1>TENTANG</h1>
+            <h1>PANDUAN</h1>
           </div>
 
         </div>
@@ -120,61 +236,16 @@
     <section class="content">
       <div class="container-fluid" >
         <div class="row">
-            <div class="col-md-6">
-                <div class="card card-navy">
-                    <div class="card-header">
-                        Judul
-                    </div>
-                    <div class="card-body">
-                        Pembuatan Jalur Evakuasi Kebakaran Gedung Pusat Universitas Gadjah Mada Berbasis Model 3D Menggunakan Mapbox GL JS
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-            <!-- /.card -->
-            </div>
+            <div class="offset-md-1 col-md-10">
+              <!-- AREA CHART -->
+              <div class="card card-primary">
 
-            <div class="col-md-6">
-                <div class="card card-navy">
-                    <div class="card-header">
-                        Tujuan
-                    </div>
-                    <div class="card-body">
-                      Menyusun peta evakuasi dengan platform web berbasis model bangunan 3D dalam ruangan pada representasi LOD-3 dari data as built drawing, floor plan, dan foto untuk mendukung skenario pembuatan jalur evakuasi kebakaran di Gedung Pusat UGM.
-                    </div>
-                    <!-- /.card-body -->
+                <div class="card-body">
+                  <div id="pdf" style="position:relative; height: 450px;">
                 </div>
-            <!-- /.card -->
+                <!-- /.card-body -->
             </div>
-        <!-- /.card -->
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-navy">
-                    <div class="card-header">
-                        Latar Belakang
-                    </div>
-                    <div class="card-body">
-                        Pemodelan 3D dalam ruangan Gedung Pusat UGM dengan Mapbox GL JS dalam LOD-3 yang berguna untuk membantu pemahaman pengguna menemukan posisinya dilengkapi jalur evakuasi kebakaran.
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-            <!-- /.card -->
-            </div>
-
-            <div class="col-md-6">
-                <div class="card card-navy">
-                    <div class="card-header">
-                        Sumber Data
-                    </div>
-                    <div class="card-body">
-                        Data yang digunakan untuk penelitian ini bersumber dari as built drawing dan floor plan Direktorat Perencanaan UGM, hasil wawancara, beserta foto-foto yang diambil secara langsung pada tahun 2019.
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-            <!-- /.card -->
-            </div>
-        <!-- /.card -->
-        </div>
+              <!-- /.card -->
 
         </div>
 
@@ -208,17 +279,30 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="./../plugins/jquery/jquery.min.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="./../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="./../plugins/chart.js/Chart.min.js"></script>
+<script src="../../plugins/chart.js/Chart.min.js"></script>
 <!-- AdminLTE App -->
-<script src="./../dist/js/adminlte.min.js"></script>
+<script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="./../dist/js/demo.js"></script>
+<script src="../../dist/js/demo.js"></script>
+<!-- PDF Adobe Script -->
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
 <!-- page script -->
-
-
+<script>
+  const urlPdf = `${window.origin}/docs/Petunjuk Penggunaan.pdf`;
+ document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "e38e227c4c9c47f596acfd22efe66909", divId: "pdf"});
+        adobeDCView.previewFile(
+       {
+          content:   {location: {url: urlPdf}},
+          metaData: {fileName: "Petunjuk Penggunaan.pdf"}
+       });
+    });
+</script>
 </body>
 </html>
