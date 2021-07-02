@@ -1026,7 +1026,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai1"
+          data: "../../docs/L1Tamu.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1045,7 +1045,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai2"
+          data: "../../docs/L2Tamu.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1064,7 +1064,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai3"
+          data: "../../docs/L3Tamu.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1193,22 +1193,24 @@
     map.on('click', 'Lantai 1', function (e) {
       // Hanya muncul jika lantai 2 dan 3 dimatikan
       if (document.getElementById("btn-lantai-2").className == '' && document.getElementById("btn-lantai-3").className == '') {
-        // Kalau id jalurnya tidak 1000
-        if (e.features[0].properties.id_jalur != 1000) {
-          // Pasang idMulai di sini
-          idMulai = parseInt(e.features[0].properties.id_jalur);
-          // Memunculkan pop up yang ada buttonnya
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-            .addTo(map);
-        }
-        else { // Kalau id jalurnya 1000
-          // Dikasih berupa nama saja
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.nama_fitur)
-            .addTo(map);
+        // Kalau fitur "nama_fitur" di jalurnya tidak kosong
+        if (e.features[0].properties.nama_fitur) {
+          // Kalau id jalurnya tidak 1000
+          if (e.features[0].properties.id_jalur != 1000) {
+            // Pasang idMulai di sini
+            idMulai = parseInt(e.features[0].properties.id_jalur);
+            // Memunculkan pop up yang ada buttonnya
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                    .addTo(map);
+          } else { // Kalau id jalurnya 1000
+            // Dikasih berupa nama saja
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(e.features[0].properties.nama_fitur)
+                    .addTo(map);
+          }
         }
       }
     });
@@ -1225,18 +1227,19 @@
 
     map.on('click', 'Lantai 2', function (e) {
       if (document.getElementById("btn-lantai-3").className == '') {
-        if (e.features[0].properties.id_jalur != 1000) {
-          idMulai = parseInt(e.features[0].properties.id_jalur);
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-            .addTo(map);
-        }
-        else {
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.nama_fitur)
-            .addTo(map);
+        if (e.features[0].properties.nama_fitur) {
+          if (e.features[0].properties.id_jalur != 1000) {
+            idMulai = parseInt(e.features[0].properties.id_jalur);
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                    .addTo(map);
+          } else {
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(e.features[0].properties.nama_fitur)
+                    .addTo(map);
+          }
         }
       }
     });
@@ -1252,18 +1255,19 @@
     });
 
     map.on('click', 'Lantai 3', function (e) {
-      if (e.features[0].properties.id_jalur != 1000) {
-        idMulai = parseInt(e.features[0].properties.id_jalur);
-        popup = new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-          .addTo(map);
-      }
-      else {
-        popup = new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.nama_fitur)
-          .addTo(map);
+      if (e.features[0].properties.nama_fitur) {
+        if (e.features[0].properties.id_jalur != 1000) {
+          idMulai = parseInt(e.features[0].properties.id_jalur);
+          popup = new mapboxgl.Popup()
+                  .setLngLat(e.lngLat)
+                  .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                  .addTo(map);
+        } else {
+          popup = new mapboxgl.Popup()
+                  .setLngLat(e.lngLat)
+                  .setHTML(e.features[0].properties.nama_fitur)
+                  .addTo(map);
+        }
       }
     });
 
