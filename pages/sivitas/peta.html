@@ -299,6 +299,9 @@
   <script src="../../dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="../../dist/js/demo.js"></script>
+  <!-- Load the `mapbox-gl-geocoder` plugin. -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
   <!-- page script -->
 
   <script>
@@ -1026,7 +1029,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai1"
+          data: "../../docs/L1Sivitas.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1045,7 +1048,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai2"
+          data: "../../docs/L2Sivitas.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1064,7 +1067,7 @@
         type: "fill-extrusion",
         source: {
           type: "geojson",
-          data: "https://raw.githubusercontent.com/3dindoormapgedungpusatugm/BalairungUGM/main/Lantai3"
+          data: "../../docs/L3Sivitas.geojson"
         },
         paint: {
           "fill-extrusion-color": ["get", "warna"],
@@ -1193,22 +1196,24 @@
     map.on('click', 'Lantai 1', function (e) {
       // Hanya muncul jika lantai 2 dan 3 dimatikan
       if (document.getElementById("btn-lantai-2").className == '' && document.getElementById("btn-lantai-3").className == '') {
-        // Kalau id jalurnya tidak 1000
-        if (e.features[0].properties.id_jalur != 1000) {
-          // Pasang idMulai di sini
-          idMulai = parseInt(e.features[0].properties.id_jalur);
-          // Memunculkan pop up yang ada buttonnya
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur +"</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-            .addTo(map);
-        }
-        else { // Kalau id jalurnya 1000
-          // Dikasih berupa nama saja
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.nama_fitur)
-            .addTo(map);
+        // Kalau fitur "nama_fitur" di jalurnya tidak kosong
+        if (e.features[0].properties.nama_fitur) {
+          // Kalau id jalurnya tidak 1000
+          if (e.features[0].properties.id_jalur != 1000) {
+            // Pasang idMulai di sini
+            idMulai = parseInt(e.features[0].properties.id_jalur);
+            // Memunculkan pop up yang ada buttonnya
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                    .addTo(map);
+          } else { // Kalau id jalurnya 1000
+            // Dikasih berupa nama saja
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(e.features[0].properties.nama_fitur)
+                    .addTo(map);
+          }
         }
       }
     });
@@ -1225,18 +1230,20 @@
 
     map.on('click', 'Lantai 2', function (e) {
       if (document.getElementById("btn-lantai-3").className == '') {
-        if (e.features[0].properties.id_jalur != 1000) {
-          idMulai = parseInt(e.features[0].properties.id_jalur);
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-            .addTo(map);
-        }
-        else {
-          popup = new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.nama_fitur)
-            .addTo(map);
+        // Kalau fitur "nama_fitur" di jalurnya tidak kosong
+        if (e.features[0].properties.nama_fitur) {
+          if (e.features[0].properties.id_jalur != 1000) {
+            idMulai = parseInt(e.features[0].properties.id_jalur);
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                    .addTo(map);
+          } else {
+            popup = new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(e.features[0].properties.nama_fitur)
+                    .addTo(map);
+          }
         }
       }
     });
@@ -1252,18 +1259,20 @@
     });
 
     map.on('click', 'Lantai 3', function (e) {
-      if (e.features[0].properties.id_jalur != 1000) {
-        idMulai = parseInt(e.features[0].properties.id_jalur);
-        popup = new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
-          .addTo(map);
-      }
-      else {
-        popup = new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.nama_fitur)
-          .addTo(map);
+      // Kalau fitur "nama_fitur" di jalurnya tidak kosong
+      if (e.features[0].properties.nama_fitur) {
+        if (e.features[0].properties.id_jalur != 1000) {
+          idMulai = parseInt(e.features[0].properties.id_jalur);
+          popup = new mapboxgl.Popup()
+                  .setLngLat(e.lngLat)
+                  .setHTML("<p style=\"margin: auto;\">" + e.features[0].properties.nama_fitur + "</p><br><button id=\"evacuateBtn\" onClick=\"javascript:evacuate()\" style=\"margin: auto;\"> Evakuasi </button>")
+                  .addTo(map);
+        } else {
+          popup = new mapboxgl.Popup()
+                  .setLngLat(e.lngLat)
+                  .setHTML(e.features[0].properties.nama_fitur)
+                  .addTo(map);
+        }
       }
     });
 
@@ -1360,6 +1369,46 @@
       new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .addTo(map);
+    });
+
+    $.getJSON('../../docs/L3Sivitas.geojson', (data) => {
+
+      data.features = data.features.filter(feature => feature.properties.nama_fitur);
+      console.log(JSON.stringify(data));
+
+
+      function forwardGeocoder(query) {
+        var matchingFeatures = [];
+        for (var i = 0; i < 5; i++) {
+          var feature = data.features[i];
+// Handle queries with different capitalization
+// than the source data by calling toLowerCase().
+          if (
+                  feature.properties.nama_fitur
+                          .toLowerCase()
+                          .search(query.toLowerCase()) !== -1
+          ) {
+// Add a tree emoji as a prefix for custom
+// data results using carmen geojson format:
+// https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+            feature['place_name'] = '🌲 ' + feature.properties.nama_fitur;
+            feature['center'] = feature.geometry.coordinates;
+            feature['place_type'] = ['park'];
+            console.log('pitur', feature);
+            matchingFeatures.push(feature);
+          }
+        }
+        return matchingFeatures;
+      }
+
+      map.addControl(
+              new MapboxGeocoder({
+                accessToken: mapboxgl.accessToken,
+                localGeocoder: forwardGeocoder,
+                mapboxgl: mapboxgl,
+                placeholder: 'Masukkan namanya'
+              })
+      );
     });
   </script>
 </body>

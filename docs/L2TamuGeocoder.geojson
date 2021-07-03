@@ -1,0 +1,530 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37851932820281,
+                            -7.767562159119917
+                        ]
+            },
+            "properties": {
+                "FID": 22,
+                "nama_fitur": "Balai Senat",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "purple",
+                "id_jalur": 560
+            },
+            "id": 22
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37909126972318,
+                            -7.76776419446324
+                        ]
+            },
+            "properties": {
+                "FID": 23,
+                "nama_fitur": "Sayap utara timur laut KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 544
+            },
+            "id": 23
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37906952510878,
+                            -7.7678268765873355
+                        ]
+            },
+            "properties": {
+                "FID": 24,
+                "nama_fitur": "Sayap utara timur laut KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 545
+            },
+            "id": 24
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37846032976131,
+                            -7.76764970318294
+                        ]
+            },
+            "properties": {
+                "FID": 49,
+                "nama_fitur": "Balai Senat KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 187
+            },
+            "id": 49
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37874485838131,
+                            -7.767734507641734
+                        ]
+            },
+            "properties": {
+                "FID": 50,
+                "nama_fitur": "Balai Senat KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 180
+            },
+            "id": 50
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37885412284209,
+                            -7.767801368521717
+                        ]
+            },
+            "properties": {
+                "FID": 55,
+                "nama_fitur": "Kantor Senat Akademik",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "pink",
+                "id_jalur": 534
+            },
+            "id": 55
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37895044155243,
+                            -7.7678305649424
+                        ]
+            },
+            "properties": {
+                "FID": 58,
+                "nama_fitur": "Kantor Majelis Wali Amanat",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "peru",
+                "id_jalur": 543
+            },
+            "id": 58
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37815732575831,
+                            -7.767461929669581
+                        ]
+            },
+            "properties": {
+                "FID": 65,
+                "nama_fitur": "Sayap utara barat laut KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 511
+            },
+            "id": 65
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37814052030483,
+                            -7.767519052329904
+                        ]
+            },
+            "properties": {
+                "FID": 66,
+                "nama_fitur": "Sayap utara barat laut KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 512
+            },
+            "id": 66
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37829822391177,
+                            -7.767634941062127
+                        ]
+            },
+            "properties": {
+                "FID": 67,
+                "nama_fitur": "Kantor Rektor dan Sekretaris Eksekutif",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "olive",
+                "id_jalur": 525
+            },
+            "id": 67
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37808847321412,
+                            -7.767576906037078
+                        ]
+            },
+            "properties": {
+                "FID": 68,
+                "nama_fitur": "Ruang Laktasi",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 509
+            },
+            "id": 68
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.3790224030696,
+                            -7.76800894676488
+                        ]
+            },
+            "properties": {
+                "FID": 143,
+                "nama_fitur": "Kantor Dewan Audit",
+                "lantai": 2,
+                "ketinggian": 5.25,
+                "tinggi_das": 4.75,
+                "warna": "orchid",
+                "id_jalur": 552
+            },
+            "id": 143
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37897167897268,
+                            -7.7681743155486345
+                        ]
+            },
+            "properties": {
+                "FID": 148,
+                "nama_fitur": "Kantor Dewan Guru Besar",
+                "lantai": 2,
+                "ketinggian": 5.25,
+                "tinggi_das": 4.75,
+                "warna": "orange",
+                "id_jalur": 557
+            },
+            "id": 148
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37804696305227,
+                            -7.76782418361158
+                        ]
+            },
+            "properties": {
+                "FID": 158,
+                "nama_fitur": "Musala",
+                "lantai": 2,
+                "ketinggian": 5.25,
+                "tinggi_das": 4.75,
+                "warna": "indigo",
+                "id_jalur": 416
+            },
+            "id": 158
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37801666204757,
+                            -7.767923529659939
+                        ]
+            },
+            "properties": {
+                "FID": 162,
+                "nama_fitur": "Kantor Wakil Rektor",
+                "lantai": 2,
+                "ketinggian": 5.25,
+                "tinggi_das": 4.75,
+                "warna": "indigo",
+                "id_jalur": 418
+            },
+            "id": 162
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.3779595641463,
+                            -7.7681381643856895
+                        ]
+            },
+            "properties": {
+                "FID": 171,
+                "nama_fitur": "Sayap selatan barat daya KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 508
+            },
+            "id": 171
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.3779755907326,
+                            -7.7680811095008835
+                        ]
+            },
+            "properties": {
+                "FID": 172,
+                "nama_fitur": "Sayap selatan barat daya KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 507
+            },
+            "id": 172
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37828636626318,
+                            -7.768227879467645
+                        ]
+            },
+            "properties": {
+                "FID": 174,
+                "nama_fitur": "Sayap selatan KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 105
+            },
+            "id": 174
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37857376084776,
+                            -7.768314453958936
+                        ]
+            },
+            "properties": {
+                "FID": 175,
+                "nama_fitur": "Sayap selatan KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 109
+            },
+            "id": 175
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.3789146744673,
+                            -7.768357031625513
+                        ]
+            },
+            "properties": {
+                "FID": 219,
+                "nama_fitur": "Sayap selatan tenggara KM laki-laki",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 424
+            },
+            "id": 219
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37889837493185,
+                            -7.768408064679363
+                        ]
+            },
+            "properties": {
+                "FID": 220,
+                "nama_fitur": "Sayap selatan tenggara KM perempuan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "khaki",
+                "id_jalur": 425
+            },
+            "id": 220
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37852168345512,
+                            -7.768196540995788
+                        ]
+            },
+            "properties": {
+                "FID": 246,
+                "nama_fitur": "Kantor Bagian Hubungan Kelembagaan",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "navy",
+                "id_jalur": 465
+            },
+            "id": 246
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37812978926183,
+                            -7.7680801111542905
+                        ]
+            },
+            "properties": {
+                "FID": 256,
+                "nama_fitur": "Direktorat Kemitraan, Alumni, dan Urusan Internasional dan Direktorat Pengembangan Usaha dan Inkubasi",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "green",
+                "id_jalur": 480
+            },
+            "id": 256
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.3784177395446,
+                            -7.768309689475743
+                        ]
+            },
+            "properties": {
+                "FID": 262,
+                "nama_fitur": "Kantor Jaminan Mutu",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "maroon",
+                "id_jalur": 475
+            },
+            "id": 262
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37881694371026,
+                            -7.768286011435265
+                        ]
+            },
+            "properties": {
+                "FID": 281,
+                "nama_fitur": "Direktorat Aset",
+                "lantai": 2,
+                "ketinggian": 6.5,
+                "tinggi_das": 6,
+                "warna": "magenta",
+                "id_jalur": 426
+            },
+            "id": 281
+        }
+    ]
+}
