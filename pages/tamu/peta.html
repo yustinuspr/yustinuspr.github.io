@@ -1137,18 +1137,6 @@
 
     });
 
-    // New keyboard functions ------------- end -------------
-
-    map.addControl(new mapboxgl.NavigationControl());
-    map.addControl(
-      new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true
-        },
-        trackUserLocation: true
-      })
-    );
-
     /* map.on('click', function(e) {
       document.getElementById('lngLatText').innerHTML =
         JSON.stringify(e.lngLat.wrap());
@@ -1369,52 +1357,67 @@
         .addTo(map);
     });
 
-    $.getJSON('../../docs/L2TamuGeocoder.geojson', (lantai1) => {
-      $.getJSON('../../docs/L1TamuGeocoder.geojson', (lantai2) => {
-        lantai1.features = lantai1.features.concat(lantai2.features);
-        const data = lantai1;
-        console.log('data', data);
-        function forwardGeocoder(query) {
-          var matchingFeatures = [];
-          for (var i = 0; i < data.features.length; i++) {
-            var feature = data.features[i];
-            // Handle queries with different capitalization
-            // than the source data by calling toLowerCase().
-            if (
-                    feature.properties.nama_fitur
-                            .toLowerCase()
-                            .search(query.toLowerCase()) !== -1
-            ) {
-              // Add a tree emoji as a prefix for custom
-              // data results using carmen geojson format:
-              // https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
-              feature['place_name'] = '🌲 ' + feature.properties.nama_fitur;
-              feature['center'] = feature.geometry.coordinates;
-              feature['place_type'] = ['park'];
-              feature['lantai'] = feature.properties.lantai;
-              matchingFeatures.push(feature);
+    $.getJSON('../../docs/L1TamuGeocoder.geojson', (lantai1) => {
+      $.getJSON('../../docs/L2TamuGeocoder.geojson', (lantai2) => {
+        $.getJSON('../../docs/L3TamuGeocoder.geojson', (lantai3) => {
+          lantai1.features = lantai1.features.concat(lantai2.features, lantai3.features);
+          const data = lantai1;
+
+          function forwardGeocoder(query) {
+            var matchingFeatures = [];
+            for (var i = 0; i < data.features.length; i++) {
+              var feature = data.features[i];
+              // Handle queries with different capitalization
+              // than the source data by calling toLowerCase().
+              if (
+                      feature.properties.nama_fitur
+                              .toLowerCase()
+                              .search(query.toLowerCase()) !== -1
+              ) {
+                // Add a tree emoji as a prefix for custom
+                // data results using carmen geojson format:
+                // https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+                feature['place_name'] = '🌲 ' + feature.properties.nama_fitur;
+                feature['center'] = feature.geometry.coordinates;
+                feature['place_type'] = ['park'];
+                feature['lantai'] = feature.properties.lantai;
+                matchingFeatures.push(feature);
+              }
             }
+            return matchingFeatures;
           }
-          return matchingFeatures;
-        }
-        const geocoder = new MapboxGeocoder({
-          accessToken: mapboxgl.accessToken,
-          localGeocoder: forwardGeocoder,
-          mapboxgl: mapboxgl,
-          placeholder: 'Masukkan namanya',
-          zoom: 20,
+
+          const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            localGeocoder: forwardGeocoder,
+            bbox: [110.37254, -7.7779, 110.37255, -7.7778],
+            mapboxgl: mapboxgl,
+            placeholder: 'Masukkan namanya',
+            zoom: 20,
+          });
+
+          map.addControl(geocoder);
+
+          geocoder.on('result', (event) => {
+            const {result} = event;
+            const {lantai} = result;
+            showOneLantaiOnly(lantai);
+          });
+
+
+          // New keyboard functions ------------- end -------------
+
+          map.addControl(new mapboxgl.NavigationControl());
+          map.addControl(
+                  new mapboxgl.GeolocateControl({
+                    positionOptions: {
+                      enableHighAccuracy: true
+                    },
+                    trackUserLocation: true
+                  })
+          );
         });
-
-        map.addControl(geocoder);
-
-        geocoder.on('result', (event) => {
-          console.log('result', event);
-          const { result } = event;
-          const { lantai } = result;
-          showOneLantaiOnly(lantai);
-        })
-      })
-
+      });
     });
   </script>
 </body>
