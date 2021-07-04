@@ -1,0 +1,2834 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37915928119855,
+                            -7.767744697677969
+                        ]
+            },
+            "properties": {
+                "FID": 0,
+                "nama_fitur": "Sayap utara timur laut Dapur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 601
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37909077118218,
+                    -7.767772555372588
+                ]
+            },
+            "properties": {
+                "FID": 1,
+                "nama_fitur": "Sayap utara timur laut KM Perempuan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 599
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37907205844476,
+                    -7.76783247992303
+                ]
+            },
+            "properties": {
+                "FID": 2,
+                "nama_fitur": "Sayap utara timur laut KM Laki-laki",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 600
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3791140501412,
+                    -7.767900697697044
+                ]
+            },
+            "properties": {
+                "FID": 5,
+                "nama_fitur": "Sayap utara timur laut Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 602
+            },
+            "id": 5
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.3790395439044,
+                            -7.7677177525089665
+                        ],
+                        [
+                            110.37902048093629,
+                            -7.767781771019164
+                        ],
+                        [
+                            110.37905050402603,
+                            -7.767790728046359
+                        ],
+                        [
+                            110.37906956550981,
+                            -7.767726737332692
+                        ],
+                        [
+                            110.3790395439044,
+                            -7.7677177525089665
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 27,
+                "nama_fitur": "DK Ruang Direktur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 593
+            },
+            "id": 27
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37902016718323,
+                            -7.767782802982131
+                        ],
+                        [
+                            110.37900111232557,
+                            -7.767846821972443
+                        ],
+                        [
+                            110.37903112751884,
+                            -7.767855826347885
+                        ],
+                        [
+                            110.37905018019883,
+                            -7.7677918505851
+                        ],
+                        [
+                            110.37902016718323,
+                            -7.767782802982131
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 28,
+                "nama_fitur": "DK Ruang Rapat",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 594
+            },
+            "id": 28
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37900719161128,
+                            -7.767708047031364
+                        ],
+                        [
+                            110.37899941701659,
+                            -7.767734165171463
+                        ],
+                        [
+                            110.37903068137629,
+                            -7.7677435323952775
+                        ],
+                        [
+                            110.37903846549462,
+                            -7.767717428993043
+                        ],
+                        [
+                            110.37900719161128,
+                            -7.767708047031364
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 29,
+                "nama_fitur": "DK Ruang Sekretaris Direktur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 590
+            },
+            "id": 29
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37897483931809,
+                            -7.767698341553748
+                        ],
+                        [
+                            110.37896706948573,
+                            -7.767724484997066
+                        ],
+                        [
+                            110.37899833491542,
+                            -7.7677338458820255
+                        ],
+                        [
+                            110.37900611320148,
+                            -7.7677077235154375
+                        ],
+                        [
+                            110.37897483931809,
+                            -7.767698341553748
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 30,
+                "nama_fitur": "DK Ruang Kasubdit Kebendaharaan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 589
+            },
+            "id": 30
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37882300594163,
+                    -7.7677999576795855
+                ]
+            },
+            "properties": {
+                "FID": 32,
+                "nama_fitur": "Direktorat Keuangan Loket",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 586
+            },
+            "id": 32
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37894420940046,
+                            -7.767801318582441
+                        ],
+                        [
+                            110.37893640132714,
+                            -7.767827430568941
+                        ],
+                        [
+                            110.3789676815918,
+                            -7.767836793094565
+                        ],
+                        [
+                            110.378975453517,
+                            -7.767810711036217
+                        ],
+                        [
+                            110.37894420940046,
+                            -7.767801318582441
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 33,
+                "nama_fitur": "DK Ruang Kasubdit Akuntansi",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 597
+            },
+            "id": 33
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37898456747087,
+                    -7.767848742711465
+                ]
+            },
+            "properties": {
+                "FID": 34,
+                "nama_fitur": "Direktorat Keuangan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 596
+            },
+            "id": 34
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37877306646561,
+                            -7.767670433513414
+                        ],
+                        [
+                            110.37876331968936,
+                            -7.767703166799416
+                        ],
+                        [
+                            110.37876222146105,
+                            -7.7677068550569945
+                        ],
+                        [
+                            110.3787609633163,
+                            -7.767706477621752
+                        ],
+                        [
+                            110.37874229343498,
+                            -7.767769178000558
+                        ],
+                        [
+                            110.37877356731836,
+                            -7.767778559962247
+                        ],
+                        [
+                            110.37878635146276,
+                            -7.7677356260686405
+                        ],
+                        [
+                            110.37888448675199,
+                            -7.767765066017384
+                        ],
+                        [
+                            110.37887170260758,
+                            -7.767807999910998
+                        ],
+                        [
+                            110.37893532291736,
+                            -7.767827107053014
+                        ],
+                        [
+                            110.37894343067192,
+                            -7.767799878209155
+                        ],
+                        [
+                            110.3789757829651,
+                            -7.7678095836867715
+                        ],
+                        [
+                            110.37898709790966,
+                            -7.767771617994837
+                        ],
+                        [
+                            110.37901055698748,
+                            -7.767778666748827
+                        ],
+                        [
+                            110.37901939318786,
+                            -7.767781270027642
+                        ],
+                        [
+                            110.3790303699119,
+                            -7.767744658378708
+                        ],
+                        [
+                            110.37896565315374,
+                            -7.76772524688168
+                        ],
+                        [
+                            110.37897376090831,
+                            -7.767698018037821
+                        ],
+                        [
+                            110.37881311043321,
+                            -7.76764980247704
+                        ],
+                        [
+                            110.37880418732819,
+                            -7.767679769569858
+                        ],
+                        [
+                            110.37877306646561,
+                            -7.767670433513414
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 36,
+                "nama_fitur": "DK Ruang Staf",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "coral",
+                "id_jalur": 592
+            },
+            "id": 36
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37861165678567,
+                    -7.767668110207197
+                ]
+            },
+            "properties": {
+                "FID": 43,
+                "nama_fitur": "Balairung",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "gold",
+                "id_jalur": 585
+            },
+            "id": 43
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+          [
+            [
+              110.37844357392817,
+              -7.767679564090626
+            ],
+            [
+              110.3784624402324,
+              -7.767685245321948
+            ],
+            [
+              110.37847068722729,
+              -7.767657593963117
+            ],
+            [
+              110.37845306734496,
+              -7.767652284431081
+            ],
+            [
+              110.37845266172872,
+              -7.767653646640786
+            ],
+            [
+              110.37845140981794,
+              -7.767653272042777
+            ],
+            [
+              110.37844983731281,
+              -7.767658529324459
+            ],
+            [
+              110.37844357392817,
+              -7.767679564090626
+            ]
+          ]
+        ]
+            },
+            "properties": {
+                "FID": 76,
+                "nama_fitur": "DKM Musala",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 581
+            },
+            "id": 76
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": 
+                        [
+                            110.37806511222334,
+                            -7.767584427078276
+                        ]
+            },
+            "properties": {
+                "FID": 78,
+                "nama_fitur": "Sayap utara barat laut Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 561
+            },
+            "id": 78
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": 
+                        [
+                            110.37811142423755,
+                            -7.767429821979562
+                        ]
+            },
+            "properties": {
+                "FID": 79,
+                "nama_fitur": "Sayap utara barat laut Dapur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 562
+            },
+            "id": 79
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3781552954456,
+                    -7.7674904071098325
+                ]
+            },
+            "properties": {
+                "FID": 80,
+                "nama_fitur": "Sayap utara barat laut KM perempuan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 563
+            },
+            "id": 80
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37815441875819,
+                    -7.767490921868273
+                ]
+            },
+            "properties": {
+                "FID": 81,
+                "nama_fitur": "Sayap utara barat laut KM laki-laki",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 564
+            },
+            "id": 81
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37819209355872,
+                            -7.767463522914907
+                        ],
+                        [
+                            110.37818374235403,
+                            -7.7674915693544815
+                        ],
+                        [
+                            110.37824606037006,
+                            -7.767510301176491
+                        ],
+                        [
+                            110.37825446159054,
+                            -7.7674822329189706
+                        ],
+                        [
+                            110.37819209355872,
+                            -7.767463522914907
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 149,
+                "nama_fitur": "DKM Ruang Server",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 1000
+            },
+            "id": 149
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37818341288553,
+                            -7.767492675831752
+                        ],
+                        [
+                            110.37817296216362,
+                            -7.767527809162251
+                        ],
+                        [
+                            110.37818360801907,
+                            -7.7675309565518535
+                        ],
+                        [
+                            110.37823540579886,
+                            -7.767546229327648
+                        ],
+                        [
+                            110.37824579160116,
+                            -7.767511365319715
+                        ],
+                        [
+                            110.37818341288553,
+                            -7.767492675831752
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 150,
+                "nama_fitur": "DKM Ruang Kontrol CCTV",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 565
+            },
+            "id": 150
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37818366585736,
+                            -7.767531912997258
+                        ],
+                        [
+                            110.37817267905903,
+                            -7.767528738332787
+                        ],
+                        [
+                            110.37816301798509,
+                            -7.767561140790958
+                        ],
+                        [
+                            110.37822539431671,
+                            -7.767579851594094
+                        ],
+                        [
+                            110.37823506769666,
+                            -7.767547367935668
+                        ],
+                        [
+                            110.37818366585736,
+                            -7.767531912997258
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 151,
+                "nama_fitur": "DKM Ruang Mesin Telepon",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 566
+            },
+            "id": 151
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3781684060749,
+                    -7.767602939306215
+                ]
+            },
+            "properties": {
+                "FID": 152,
+                "nama_fitur": "Wesel Board dan Ruang Mesin Telepon",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 567
+            },
+            "id": 152
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37845250409516,
+                            -7.76764954350052
+                        ],
+                        [
+                            110.37845375995701,
+                            -7.7676499583832115
+                        ],
+                        [
+                            110.37845339681347,
+                            -7.767651177953811
+                        ],
+                        [
+                            110.37847235885192,
+                            -7.767656866442065
+                        ],
+                        [
+                            110.37846633090079,
+                            -7.767677109431764
+                        ],
+                        [
+                            110.37847612931978,
+                            -7.767680039521421
+                        ],
+                        [
+                            110.37849225954815,
+                            -7.767625868238268
+                        ],
+                        [
+                            110.3784622438095,
+                            -7.767616863711817
+                        ],
+                        [
+                            110.37845250409516,
+                            -7.76764954350052
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 153,
+                "nama_fitur": "DKM Ruang Arsip",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 582
+            },
+            "id": 153
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37842630216892,
+                    -7.767680270064233
+                ]
+            },
+            "properties": {
+                "FID": 154,
+                "nama_fitur": "Direktorat Kemahasiswaan Loket",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 580
+            },
+            "id": 154
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37835026032523,
+                            -7.767510971916552
+                        ],
+                        [
+                            110.37831182820105,
+                            -7.76764004122902
+                        ],
+                        [
+                            110.37837940854672,
+                            -7.767660314893357
+                        ],
+                        [
+                            110.37841784653773,
+                            -7.767531225878178
+                        ],
+                        [
+                            110.37835026032523,
+                            -7.767510971916552
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 155,
+                "nama_fitur": "DKM Ruang Staf",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 666
+            },
+            "id": 155
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37825554000028,
+                            -7.767482556434887
+                        ],
+                        [
+                            110.37823650380403,
+                            -7.7675465430134505
+                        ],
+                        [
+                            110.378267755,
+                            -7.767555974726887
+                        ],
+                        [
+                            110.37828681388368,
+                            -7.767491938396576
+                        ],
+                        [
+                            110.37825554000028,
+                            -7.767482556434887
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 156,
+                "nama_fitur": "DKM Ruang Rapat",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 568
+            },
+            "id": 156
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.378236167436,
+                            -7.767547698402877
+                        ],
+                        [
+                            110.37821710770318,
+                            -7.767611625809904
+                        ],
+                        [
+                            110.37824838288643,
+                            -7.767621002806193
+                        ],
+                        [
+                            110.3782674687465,
+                            -7.767557077172954
+                        ],
+                        [
+                            110.378236167436,
+                            -7.767547698402877
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 157,
+                "nama_fitur": "DKM Ruang Direktur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 569
+            },
+            "id": 157
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37829657347766,
+                    -7.767642001590872
+                ]
+            },
+            "properties": {
+                "FID": 158,
+                "nama_fitur": "Direktorat Kemahasiswaan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 577
+            },
+            "id": 158
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37828976943453,
+                            -7.767600369026583
+                        ],
+                        [
+                            110.37825847847944,
+                            -7.7675910286623715
+                        ],
+                        [
+                            110.37824946330306,
+                            -7.767621331500285
+                        ],
+                        [
+                            110.37828073405265,
+                            -7.767630713186657
+                        ],
+                        [
+                            110.37828976943453,
+                            -7.767600369026583
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 159,
+                "nama_fitur": "DKM Ruang Kasubdit Kesejahteraan Mahasiswa",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 574
+            },
+            "id": 159
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37825889699542,
+                            -7.767589893984864
+                        ],
+                        [
+                            110.37829007321776,
+                            -7.767599272064542
+                        ],
+                        [
+                            110.37829977469858,
+                            -7.767566713745689
+                        ],
+                        [
+                            110.37826851442712,
+                            -7.767557340446407
+                        ],
+                        [
+                            110.37825889699542,
+                            -7.767589893984864
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 160,
+                "nama_fitur": "DKM Ruang Sekretaris Direktur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 570
+            },
+            "id": 160
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37828789229346,
+                            -7.767492261912503
+                        ],
+                        [
+                            110.37827883363175,
+                            -7.7675226416780045
+                        ],
+                        [
+                            110.37831012199482,
+                            -7.7675320175883495
+                        ],
+                        [
+                            110.37831916617685,
+                            -7.767501643874192
+                        ],
+                        [
+                            110.37828789229346,
+                            -7.767492261912503
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 161,
+                "nama_fitur": "DKM Ruang Kasubdit Organisasi dan Fasilitas Manusia",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 573
+            },
+            "id": 161
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+          [
+            [
+              110.37827851784651,
+              -7.767523741474632
+            ],
+            [
+              110.37826885270813,
+              -7.767556279600123
+            ],
+            [
+              110.37830013068941,
+              -7.76756560113842
+            ],
+            [
+              110.37830979333785,
+              -7.767533112042495
+            ],
+            [
+              110.37827851784651,
+              -7.767523741474632
+            ]
+          ]
+        ]
+            },
+            "properties": {
+                "FID": 162,
+                "nama_fitur": "DKM Ruang Sekretaris Direktorat",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "fuchsia",
+                "id_jalur": 572
+            },
+            "id": 162
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37793686489431,
+                    -7.768011488546165
+                ]
+            },
+            "properties": {
+                "FID": 171,
+                "nama_fitur": "Sayap selatan barat daya Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 660
+            },
+            "id": 171
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37788980799803,
+                    -7.7681657129806325
+                ]
+            },
+            "properties": {
+                "FID": 172,
+                "nama_fitur": "Sayap selatan barat daya Dapur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 661
+            },
+            "id": 172
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37797828259977,
+                    -7.768077318745313
+                ]
+            },
+            "properties": {
+                "FID": 195,
+                "nama_fitur": "Sayap selatan barat daya KM laki-laki",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 658
+            },
+            "id": 195
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37795894532746,
+                    -7.768140003967048
+                ]
+            },
+            "properties": {
+                "FID": 196,
+                "nama_fitur": "Sayap selatan barat daya KM perempuan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 659
+            },
+            "id": 196
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37811264073994,
+                            -7.768076876345534
+                        ],
+                        [
+                            110.37804901456343,
+                            -7.768057788906239
+                        ],
+                        [
+                            110.37802992035448,
+                            -7.768121786614158
+                        ],
+                        [
+                            110.37809361451227,
+                            -7.768140840091222
+                        ],
+                        [
+                            110.37811264073994,
+                            -7.768076876345534
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 199,
+                "nama_fitur": "KHO Ruang Rapat KHO dan HMP",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 646
+            },
+            "id": 199
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37805632910045,
+                    -7.768204610883714
+                ]
+            },
+            "properties": {
+                "FID": 200,
+                "nama_fitur": "Kantor Humas dan Keprotokoleran",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 648
+            },
+            "id": 200
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37809439873112,
+                            -7.768142271099803
+                        ],
+                        [
+                            110.37808687406692,
+                            -7.768167411607243
+                        ],
+                        [
+                            110.37811797475626,
+                            -7.768176754551698
+                        ],
+                        [
+                            110.37812566108659,
+                            -7.768151680042914
+                        ],
+                        [
+                            110.37809439873112,
+                            -7.768142271099803
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 201,
+                "nama_fitur": "HMP Ruang Kasubbag Layanan Informasi",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 650
+            },
+            "id": 201
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37811371914972,
+                            -7.768077199861457
+                        ],
+                        [
+                            110.37809471417094,
+                            -7.76814111653457
+                        ],
+                        [
+                            110.3781582991243,
+                            -7.7681602719671705
+                        ],
+                        [
+                            110.37816556682739,
+                            -7.768135843864025
+                        ],
+                        [
+                            110.3781989990584,
+                            -7.76814586772568
+                        ],
+                        [
+                            110.37820333553236,
+                            -7.7681313042393665
+                        ],
+                        [
+                            110.37816990482943,
+                            -7.7681212752458375
+                        ],
+                        [
+                            110.37817734532625,
+                            -7.768096287300752
+                        ],
+                        [
+                            110.37811371914972,
+                            -7.768077199861457
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 202,
+                "nama_fitur": "KHO Ruang Staf",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 645
+            },
+            "id": 202
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37817842373605,
+                            -7.768096610816679
+                        ],
+                        [
+                            110.37817131270772,
+                            -7.76812049228449
+                        ],
+                        [
+                            110.37820253775443,
+                            -7.768129912394363
+                        ],
+                        [
+                            110.37820969761943,
+                            -7.768105992778368
+                        ],
+                        [
+                            110.37817842373605,
+                            -7.768096610816679
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 203,
+                "nama_fitur": "KHO Ruang Kabag Per UU, Organisasi, dan Tata Laksana",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 643
+            },
+            "id": 203
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37816647361711,
+                            -7.768137030422041
+                        ],
+                        [
+                            110.3781593431894,
+                            -7.768160558661991
+                        ],
+                        [
+                            110.37819062200032,
+                            -7.768170009020514
+                        ],
+                        [
+                            110.37819768966472,
+                            -7.768146392750017
+                        ],
+                        [
+                            110.37816647361711,
+                            -7.768137030422041
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 204,
+                "nama_fitur": "KHO Ruang Kabag Hukum",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 644
+            },
+            "id": 204
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3782594818822,
+                    -7.768119744391129
+                ]
+            },
+            "properties": {
+                "FID": 205,
+                "nama_fitur": "Kantor Hukum dan Organisasi",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 636
+            },
+            "id": 205
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37827545507724,
+                            -7.7681257410869
+                        ],
+                        [
+                            110.37826720916874,
+                            -7.768153505832329
+                        ],
+                        [
+                            110.37829722490739,
+                            -7.768162510358776
+                        ],
+                        [
+                            110.37830549635416,
+                            -7.768134731775961
+                        ],
+                        [
+                            110.37827545507724,
+                            -7.7681257410869
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 206,
+                "nama_fitur": "KHO Ruang Kepala",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 637
+            },
+            "id": 206
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.3782344537145,
+                            -7.768144890717695
+                        ],
+                        [
+                            110.37822405091909,
+                            -7.768179957054228
+                        ],
+                        [
+                            110.3782554367848,
+                            -7.768189422011618
+                        ],
+                        [
+                            110.37826582115909,
+                            -7.768154294754138
+                        ],
+                        [
+                            110.3782344537145,
+                            -7.768144890717695
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 207,
+                "nama_fitur": "KHO Ruang Sidang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 639
+            },
+            "id": 207
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37826687141921,
+                            -7.7681546401204375
+                        ],
+                        [
+                            110.37825644513096,
+                            -7.768189675109058
+                        ],
+                        [
+                            110.37828644209291,
+                            -7.768198723044913
+                        ],
+                        [
+                            110.37828611262442,
+                            -7.768199829522187
+                        ],
+                        [
+                            110.3782968954389,
+                            -7.768163616836047
+                        ],
+                        [
+                            110.37826687141921,
+                            -7.7681546401204375
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 208,
+                "nama_fitur": "KHO Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "crimson",
+                "id_jalur": 638
+            },
+            "id": 208
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37825082139636,
+                    -7.768262789562542
+                ]
+            },
+            "properties": {
+                "FID": 209,
+                "nama_fitur": "Fortakgama",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 663
+            },
+            "id": 209
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37810763345192,
+                            -7.768215994354252
+                        ],
+                        [
+                            110.3781389073353,
+                            -7.768225376315941
+                        ],
+                        [
+                            110.37814798390153,
+                            -7.768194893843562
+                        ],
+                        [
+                            110.37811671001815,
+                            -7.768185511881869
+                        ],
+                        [
+                            110.37810763345192,
+                            -7.768215994354252
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 210,
+                "nama_fitur": "HMP Ruang Tunggu Tamu",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 652
+            },
+            "id": 210
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37812669415445,
+                            -7.768151945711663
+                        ],
+                        [
+                            110.37811920201929,
+                            -7.768177142818745
+                        ],
+                        [
+                            110.3781504759025,
+                            -7.768186524781031
+                        ],
+                        [
+                            110.37815794560959,
+                            -7.768161381621249
+                        ],
+                        [
+                            110.37812669415445,
+                            -7.768151945711663
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 211,
+                "nama_fitur": "HMP Ruang Kasubbag Pemberitaan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 654
+            },
+            "id": 211
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37815897980958,
+                            -7.768161689305886
+                        ],
+                        [
+                            110.37815155431228,
+                            -7.768186848296958
+                        ],
+                        [
+                            110.37818281238945,
+                            -7.768196245872824
+                        ],
+                        [
+                            110.3781903142141,
+                            -7.7681711294129325
+                        ],
+                        [
+                            110.37815897980958,
+                            -7.768161689305886
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 212,
+                "nama_fitur": "HMP Ruang Kepala Bagian",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 655
+            },
+            "id": 212
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37818362928718,
+                            -7.768197485112077
+                        ],
+                        [
+                            110.37808658551154,
+                            -7.768168364692267
+                        ],
+                        [
+                            110.3780846871935,
+                            -7.7681746999269965
+                        ],
+                        [
+                            110.37814939177983,
+                            -7.768194110882211
+                        ],
+                        [
+                            110.3781399857451,
+                            -7.768225699831868
+                        ],
+                        [
+                            110.37823596421478,
+                            -7.768254492748779
+                        ],
+                        [
+                            110.37825506404684,
+                            -7.768190495939601
+                        ],
+                        [
+                            110.37819137888727,
+                            -7.768171425297551
+                        ],
+                        [
+                            110.37818362928718,
+                            -7.768197485112077
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 213,
+                "nama_fitur": "HMP Ruang Staf",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 657
+            },
+            "id": 213
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37834521778075,
+                            -7.76814664794569
+                        ],
+                        [
+                            110.37832654789943,
+                            -7.768209348324495
+                        ],
+                        [
+                            110.37838765778646,
+                            -7.768227680893306
+                        ],
+                        [
+                            110.37840632766782,
+                            -7.768164980514511
+                        ],
+                        [
+                            110.37834521778075,
+                            -7.76814664794569
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 248,
+                "nama_fitur": "HMP Ruang Arsip",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "blue",
+                "id_jalur": 1000
+            },
+            "id": 248
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37835669084697,
+                            -7.768222408731715
+                        ],
+                        [
+                            110.3783465645927,
+                            -7.768256394718028
+                        ],
+                        [
+                            110.3783776865467,
+                            -7.768265770762268
+                        ],
+                        [
+                            110.37838781770289,
+                            -7.768231746586123
+                        ],
+                        [
+                            110.37835669084697,
+                            -7.768222408731715
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 249,
+                "nama_fitur": "KTURT Ruang Kabag TU",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 631
+            },
+            "id": 249
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37840992236704,
+                            -7.768166058900908
+                        ],
+                        [
+                            110.37839125248573,
+                            -7.7682287592797135
+                        ],
+                        [
+                            110.37842129131383,
+                            -7.768237741053392
+                        ],
+                        [
+                            110.3784399381057,
+                            -7.768175063427355
+                        ],
+                        [
+                            110.37840992236704,
+                            -7.768166058900908
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 250,
+                "nama_fitur": "KTURT Ruang Arsip",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 667
+            },
+            "id": 250
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37835100709117,
+                    -7.76829218700405
+                ]
+            },
+            "properties": {
+                "FID": 251,
+                "nama_fitur": "Post Center",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 630
+            },
+            "id": 251
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37844101651548,
+                            -7.768175386943282
+                        ],
+                        [
+                            110.37842216908014,
+                            -7.76823803597666
+                        ],
+                        [
+                            110.37848471466594,
+                            -7.76825679732614
+                        ],
+                        [
+                            110.37850338454726,
+                            -7.768194096947331
+                        ],
+                        [
+                            110.37844101651548,
+                            -7.768175386943282
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 252,
+                "nama_fitur": "KTURT Ruang Staf Rumah Tangga",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 633
+            },
+            "id": 252
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37849844052135,
+                            -7.768223851536389
+                        ],
+                        [
+                            110.37848830936517,
+                            -7.768257875712537
+                        ],
+                        [
+                            110.37851832510385,
+                            -7.768266880238999
+                        ],
+                        [
+                            110.37852845626,
+                            -7.768232856062836
+                        ],
+                        [
+                            110.37849844052135,
+                            -7.768223851536389
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 253,
+                "nama_fitur": "KTURT Ruang Kabag Rumah Tangga",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 635
+            },
+            "id": 253
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37850697924654,
+                            -7.768195175333743
+                        ],
+                        [
+                            110.37849876998986,
+                            -7.768222745059118
+                        ],
+                        [
+                            110.3785298641383,
+                            -7.768232073101492
+                        ],
+                        [
+                            110.3785194035136,
+                            -7.768267203754908
+                        ],
+                        [
+                            110.37854941925224,
+                            -7.768276208281359
+                        ],
+                        [
+                            110.37856808913357,
+                            -7.76821350790255
+                        ],
+                        [
+                            110.37850697924654,
+                            -7.768195175333743
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 254,
+                "nama_fitur": "KTURT Ruang Tata Suara",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 635
+            },
+            "id": 254
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+          [
+            [
+              110.37848595299215,
+              -7.768261186534884
+            ],
+            [
+              110.37847582183598,
+              -7.768295210711033
+            ],
+            [
+              110.37853818986775,
+              -7.768313920715082
+            ],
+            [
+              110.37854832102394,
+              -7.7682798965389335
+            ],
+            [
+              110.37848595299215,
+              -7.768261186534884
+            ]
+          ]
+        ]
+            },
+            "properties": {
+                "FID": 256,
+                "nama_fitur": "KTURT Ruang Rapat",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 626
+            },
+            "id": 256
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37847549236747,
+                            -7.7682963171883
+                        ],
+                        [
+                            110.3784672831108,
+                            -7.768323886913679
+                        ],
+                        [
+                            110.37849855699417,
+                            -7.768333268875368
+                        ],
+                        [
+                            110.3785067768773,
+                            -7.7683057023378534
+                        ],
+                        [
+                            110.37847549236747,
+                            -7.7682963171883
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 257,
+                "nama_fitur": "KTURT Ruang Kepala",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 627
+            },
+            "id": 257
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3784489957252,
+                    -7.768321637829118
+                ]
+            },
+            "properties": {
+                "FID": 258,
+                "nama_fitur": "Kantor Tata Usaha dan Rumah Tangga",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 629
+            },
+            "id": 258
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37838889611268,
+                            -7.76823207010205
+                        ],
+                        [
+                            110.3783787649565,
+                            -7.768266094278195
+                        ],
+                        [
+                            110.37847477658181,
+                            -7.768294910825476
+                        ],
+                        [
+                            110.37848487458237,
+                            -7.768260863018957
+                        ],
+                        [
+                            110.37838889611268,
+                            -7.76823207010205
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 259,
+                "nama_fitur": "KTURT Ruang Staf Tata Usaha",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "beige",
+                "id_jalur": 662
+            },
+            "id": 259
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                        [
+                            110.37893868906872,
+                            -7.768478983679401
+                        ]
+            },
+            "properties": {
+                "FID": 260,
+                "nama_fitur": "Sayap selatan tenggara Dapur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 604
+            },
+            "id": 260
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": 
+                        [
+                            110.37898224413561,
+                            -7.7683245286252145
+                        ]
+            },
+            "properties": {
+                "FID": 276,
+                "nama_fitur": "Sayap selatan tenggara Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 603
+            },
+            "id": 276
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37889306177931,
+                    -7.76842011017952
+                ]
+            },
+            "properties": {
+                "FID": 277,
+                "nama_fitur": "Sayap selatan tenggara KM perempuan",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 606
+            },
+            "id": 277
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.378910993109,
+                    -7.768357584646907
+                ]
+            },
+            "properties": {
+                "FID": 278,
+                "nama_fitur": "Sayap selatan tenggara KM laki-laki",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "khaki",
+                "id_jalur": 605
+            },
+            "id": 278
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37864100997908,
+                            -7.7682353839539235
+                        ],
+                        [
+                            110.37860781056018,
+                            -7.768225424072289
+                        ],
+                        [
+                            110.37858869987593,
+                            -7.768289419877425
+                        ],
+                        [
+                            110.37862195084392,
+                            -7.768299394951635
+                        ],
+                        [
+                            110.37864100997908,
+                            -7.7682353839539235
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 306,
+                "nama_fitur": "DSDM Ruang Sekretaris Direktorat",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 623
+            },
+            "id": 306
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37859933775158,
+                            -7.76836350244737
+                        ],
+                        [
+                            110.3786074749909,
+                            -7.768336171389764
+                        ],
+                        [
+                            110.37857750928956,
+                            -7.7683271869657755
+                        ],
+                        [
+                            110.37856937256919,
+                            -7.768354513087468
+                        ],
+                        [
+                            110.37859933775158,
+                            -7.76836350244737
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 307,
+                "nama_fitur": "DSDM Ruang Subdit Pengadaan dan Remunerasi",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 620
+            },
+            "id": 307
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37857788620244,
+                            -7.768325921152753
+                        ],
+                        [
+                            110.3786078512858,
+                            -7.768334909327153
+                        ],
+                        [
+                            110.37861839670856,
+                            -7.768299509478011
+                        ],
+                        [
+                            110.37858837040744,
+                            -7.768290526354695
+                        ],
+                        [
+                            110.37857788620244,
+                            -7.768325921152753
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 308,
+                "nama_fitur": "DSDM Ruang Sidang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 622
+            },
+            "id": 308
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37861947563837,
+                            -7.76829987165552
+                        ],
+                        [
+                            110.37860041785419,
+                            -7.768363826471129
+                        ],
+                        [
+                            110.37866404820464,
+                            -7.768382893699863
+                        ],
+                        [
+                            110.37868303093839,
+                            -7.768319003512433
+                        ],
+                        [
+                            110.37867253821852,
+                            -7.768315776150805
+                        ],
+                        [
+                            110.37861947563837,
+                            -7.76829987165552
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 309,
+                "nama_fitur": "DSDM Ruang Direktur",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 619
+            },
+            "id": 309
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37868704369816,
+                    -7.7682488602686846
+                ]
+            },
+            "properties": {
+                "FID": 310,
+                "nama_fitur": "Direktorat Sumber Daya Manusia",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 625
+            },
+            "id": 310
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37886536489393,
+                            -7.768302710160652
+                        ],
+                        [
+                            110.37885627913175,
+                            -7.768333202422285
+                        ],
+                        [
+                            110.37888635168999,
+                            -7.768342222174736
+                        ],
+                        [
+                            110.37889538649932,
+                            -7.768311694984375
+                        ],
+                        [
+                            110.37886536489393,
+                            -7.768302710160652
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 311,
+                "nama_fitur": "DSDM Gudang",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 607
+            },
+            "id": 311
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37885487751684,
+                            -7.768333985443098
+                        ],
+                        [
+                            110.37882360036322,
+                            -7.768324592513677
+                        ],
+                        [
+                            110.37881395133633,
+                            -7.768357035924032
+                        ],
+                        [
+                            110.37884524476999,
+                            -7.768366386993163
+                        ],
+                        [
+                            110.37885487751684,
+                            -7.768333985443098
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 312,
+                "nama_fitur": "DSDM Ruang Subdit Kepegawaian",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 614
+            },
+            "id": 312
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37883301260078,
+                            -7.768293004683047
+                        ],
+                        [
+                            110.37882400128305,
+                            -7.768323207182524
+                        ],
+                        [
+                            110.37885528935246,
+                            -7.76833260234651
+                        ],
+                        [
+                            110.37886429235088,
+                            -7.768302366941997
+                        ],
+                        [
+                            110.37883301260078,
+                            -7.768293004683047
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 313,
+                "nama_fitur": "DSDM Ruang Subdit SDM",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 613
+            },
+            "id": 313
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37886515056016,
+                            -7.768413238470773
+                        ],
+                        [
+                            110.37883518123195,
+                            -7.768404196967905
+                        ],
+                        [
+                            110.37882695771202,
+                            -7.768431775317891
+                        ],
+                        [
+                            110.37885694850837,
+                            -7.768440783999564
+                        ],
+                        [
+                            110.37886515056016,
+                            -7.768413238470773
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 314,
+                "nama_fitur": "DSDM Ruang TI",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 611
+            },
+            "id": 314
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37881363804104,
+                            -7.7683580866911
+                        ],
+                        [
+                            110.3787945863433,
+                            -7.768422054292776
+                        ],
+                        [
+                            110.37882587930227,
+                            -7.768431451801979
+                        ],
+                        [
+                            110.3788344076414,
+                            -7.768402810479342
+                        ],
+                        [
+                            110.37886548002861,
+                            -7.768412131993491
+                        ],
+                        [
+                            110.37888602222154,
+                            -7.768343328652021
+                        ],
+                        [
+                            110.37885596311764,
+                            -7.768334292816865
+                        ],
+                        [
+                            110.378845966055,
+                            -7.768367873001948
+                        ],
+                        [
+                            110.37881363804104,
+                            -7.7683580866911
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 315,
+                "nama_fitur": "DSDM Ruang Arsip",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 608
+            },
+            "id": 315
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37870355873864,
+                            -7.768254147903322
+                        ],
+                        [
+                            110.37866512661444,
+                            -7.76838321721579
+                        ],
+                        [
+                            110.3787935020668,
+                            -7.768421750479588
+                        ],
+                        [
+                            110.378831934191,
+                            -7.76829268116712
+                        ],
+                        [
+                            110.37870355873864,
+                            -7.768254147903322
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 316,
+                "nama_fitur": "DSDM Ruang Staf",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "aqua",
+                "id_jalur": 616
+            },
+            "id": 316
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            110.37853993902573,
+                            -7.767502564898178
+                        ],
+                        [
+                            110.37853884079742,
+                            -7.767506253155757
+                        ],
+                        [
+                            110.37856202074076,
+                            -7.767513228450769
+                        ],
+                        [
+                            110.37856311896908,
+                            -7.76750954019319
+                        ],
+                        [
+                            110.3785724651871,
+                            -7.767512343997835
+                        ],
+                        [
+                            110.37857118722386,
+                            -7.767515978336098
+                        ],
+                        [
+                            110.37859455276887,
+                            -7.767522987847697
+                        ],
+                        [
+                            110.3785956509972,
+                            -7.767519299590122
+                        ],
+                        [
+                            110.37860481748028,
+                            -7.767522049475454
+                        ],
+                        [
+                            110.37860371925197,
+                            -7.767525737733029
+                        ],
+                        [
+                            110.37862673119382,
+                            -7.767532619703262
+                        ],
+                        [
+                            110.37862782942213,
+                            -7.767528931445687
+                        ],
+                        [
+                            110.37863717564016,
+                            -7.767531735250332
+                        ],
+                        [
+                            110.37863607741184,
+                            -7.76753542350791
+                        ],
+                        [
+                            110.3786592573552,
+                            -7.767542398802918
+                        ],
+                        [
+                            110.37866035558349,
+                            -7.7675387105453435
+                        ],
+                        [
+                            110.37866952206659,
+                            -7.767541460430669
+                        ],
+                        [
+                            110.37866842383826,
+                            -7.767545148688248
+                        ],
+                        [
+                            110.37869142991342,
+                            -7.767552050361219
+                        ],
+                        [
+                            110.37869252814168,
+                            -7.767548362103627
+                        ],
+                        [
+                            110.37870187435972,
+                            -7.767551165908275
+                        ],
+                        [
+                            110.37870077613141,
+                            -7.76755485416585
+                        ],
+                        [
+                            110.37872378220655,
+                            -7.7675617558388215
+                        ],
+                        [
+                            110.37872488043486,
+                            -7.767558067581243
+                        ],
+                        [
+                            110.37873422665288,
+                            -7.767560871385891
+                        ],
+                        [
+                            110.37873312842459,
+                            -7.767564559643466
+                        ],
+                        [
+                            110.37875614036648,
+                            -7.767571441613713
+                        ],
+                        [
+                            110.37876176878655,
+                            -7.767552539293623
+                        ],
+                        [
+                            110.3785446433615,
+                            -7.76748739364845
+                        ],
+                        [
+                            110.37853993902573,
+                            -7.767502564898178
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "FID": 679,
+                "nama_fitur": "Balairung ",
+                "lantai": 1,
+                "ketinggian": 2.25,
+                "tinggi_das": 0,
+                "warna": "gold",
+                "id_jalur": 1000
+            },
+            "id": 679
+        }
+    ]
+}

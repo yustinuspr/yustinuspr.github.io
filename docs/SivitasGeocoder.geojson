@@ -1,0 +1,1585 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37909077118218,
+          -7.767772555372588
+        ]
+      },
+      "properties": {
+        "FID": 1,
+        "nama_fitur": "Sayap utara timur laut KM Perempuan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 599
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37907205844476,
+          -7.76783247992303
+        ]
+      },
+      "properties": {
+        "FID": 2,
+        "nama_fitur": "Sayap utara timur laut KM Laki-laki",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 600
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37882300594163,
+          -7.7677999576795855
+        ]
+      },
+      "properties": {
+        "FID": 32,
+        "nama_fitur": "Direktorat Keuangan Loket",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "coral",
+        "id_jalur": 586
+      },
+      "id": 32
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37898456747087,
+          -7.767848742711465
+        ]
+      },
+      "properties": {
+        "FID": 34,
+        "nama_fitur": "Direktorat Keuangan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "coral",
+        "id_jalur": 596
+      },
+      "id": 34
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37861165678567,
+          -7.767668110207197
+        ]
+      },
+      "properties": {
+        "FID": 43,
+        "nama_fitur": "Balairung",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "gold",
+        "id_jalur": 585
+      },
+      "id": 43
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3781552954456,
+          -7.7674904071098325
+        ]
+      },
+      "properties": {
+        "FID": 80,
+        "nama_fitur": "Sayap utara barat laut KM perempuan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 563
+      },
+      "id": 80
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37815441875819,
+          -7.767490921868273
+        ]
+      },
+      "properties": {
+        "FID": 81,
+        "nama_fitur": "Sayap utara barat laut KM laki-laki",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 564
+      },
+      "id": 81
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3781684060749,
+          -7.767602939306215
+        ]
+      },
+      "properties": {
+        "FID": 152,
+        "nama_fitur": "Wesel Board dan Ruang Mesin Telepon",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "fuchsia",
+        "id_jalur": 567
+      },
+      "id": 152
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37842630216892,
+          -7.767680270064233
+        ]
+      },
+      "properties": {
+        "FID": 154,
+        "nama_fitur": "Direktorat Kemahasiswaan Loket",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "fuchsia",
+        "id_jalur": 580
+      },
+      "id": 154
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37829657347766,
+          -7.767642001590872
+        ]
+      },
+      "properties": {
+        "FID": 158,
+        "nama_fitur": "Direktorat Kemahasiswaan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "fuchsia",
+        "id_jalur": 577
+      },
+      "id": 158
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37797828259977,
+          -7.768077318745313
+        ]
+      },
+      "properties": {
+        "FID": 195,
+        "nama_fitur": "Sayap selatan barat daya KM laki-laki",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 658
+      },
+      "id": 195
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37795894532746,
+          -7.768140003967048
+        ]
+      },
+      "properties": {
+        "FID": 196,
+        "nama_fitur": "Sayap selatan barat daya KM perempuan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 659
+      },
+      "id": 196
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37805632910045,
+          -7.768204610883714
+        ]
+      },
+      "properties": {
+        "FID": 200,
+        "nama_fitur": "Kantor Humas dan Keprotokoleran",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "blue",
+        "id_jalur": 648
+      },
+      "id": 200
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3782594818822,
+          -7.768119744391129
+        ]
+      },
+      "properties": {
+        "FID": 205,
+        "nama_fitur": "Kantor Hukum dan Organisasi",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "crimson",
+        "id_jalur": 636
+      },
+      "id": 205
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37825082139636,
+          -7.768262789562542
+        ]
+      },
+      "properties": {
+        "FID": 209,
+        "nama_fitur": "Fortakgama",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "blue",
+        "id_jalur": 663
+      },
+      "id": 209
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37835100709117,
+          -7.76829218700405
+        ]
+      },
+      "properties": {
+        "FID": 251,
+        "nama_fitur": "Post Center",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "beige",
+        "id_jalur": 630
+      },
+      "id": 251
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3784489957252,
+          -7.768321637829118
+        ]
+      },
+      "properties": {
+        "FID": 258,
+        "nama_fitur": "Kantor Tata Usaha dan Rumah Tangga",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "beige",
+        "id_jalur": 629
+      },
+      "id": 258
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37889306177931,
+          -7.76842011017952
+        ]
+      },
+      "properties": {
+        "FID": 277,
+        "nama_fitur": "Sayap selatan tenggara KM perempuan",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 606
+      },
+      "id": 277
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.378910993109,
+          -7.768357584646907
+        ]
+      },
+      "properties": {
+        "FID": 278,
+        "nama_fitur": "Sayap selatan tenggara KM laki-laki",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 605
+      },
+      "id": 278
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37868704369816,
+          -7.7682488602686846
+        ]
+      },
+      "properties": {
+        "FID": 310,
+        "nama_fitur": "Direktorat Sumber Daya Manusia",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "aqua",
+        "id_jalur": 625
+      },
+      "id": 310
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37858467166654,
+          -7.767745748257738
+        ]
+      },
+      "properties": {
+        "FID": 22,
+        "nama_fitur": "Balai Senat",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "purple",
+        "id_jalur": 560
+      },
+      "id": 22
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37909126972318,
+          -7.76776419446324
+        ]
+      },
+      "properties": {
+        "FID": 23,
+        "nama_fitur": "Sayap utara timur laut KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 544
+      },
+      "id": 23
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37906952510878,
+          -7.7678268765873355
+        ]
+      },
+      "properties": {
+        "FID": 24,
+        "nama_fitur": "Sayap utara timur laut KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 545
+      },
+      "id": 24
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37846032976131,
+          -7.76764970318294
+        ]
+      },
+      "properties": {
+        "FID": 49,
+        "nama_fitur": "Balai Senat KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 187
+      },
+      "id": 49
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37874485838131,
+          -7.767734507641734
+        ]
+      },
+      "properties": {
+        "FID": 50,
+        "nama_fitur": "Balai Senat KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 180
+      },
+      "id": 50
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37885412284209,
+          -7.767801368521717
+        ]
+      },
+      "properties": {
+        "FID": 55,
+        "nama_fitur": "Kantor Senat Akademik",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "pink",
+        "id_jalur": 534
+      },
+      "id": 55
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37895044155243,
+          -7.7678305649424
+        ]
+      },
+      "properties": {
+        "FID": 58,
+        "nama_fitur": "Kantor Majelis Wali Amanat",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "peru",
+        "id_jalur": 543
+      },
+      "id": 58
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37815732575831,
+          -7.767461929669581
+        ]
+      },
+      "properties": {
+        "FID": 65,
+        "nama_fitur": "Sayap utara barat laut KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 511
+      },
+      "id": 65
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37814052030483,
+          -7.767519052329904
+        ]
+      },
+      "properties": {
+        "FID": 66,
+        "nama_fitur": "Sayap utara barat laut KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 512
+      },
+      "id": 66
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37829822391177,
+          -7.767634941062127
+        ]
+      },
+      "properties": {
+        "FID": 67,
+        "nama_fitur": "Kantor Rektor dan Sekretaris Eksekutif",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "olive",
+        "id_jalur": 525
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37808847321412,
+          -7.767576906037078
+        ]
+      },
+      "properties": {
+        "FID": 68,
+        "nama_fitur": "Ruang Laktasi",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 509
+      },
+      "id": 68
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3790224030696,
+          -7.76800894676488
+        ]
+      },
+      "properties": {
+        "FID": 143,
+        "nama_fitur": "Kantor Dewan Audit",
+        "lantai": 2,
+        "ketinggian": 5.25,
+        "tinggi_das": 4.75,
+        "warna": "orchid",
+        "id_jalur": 552
+      },
+      "id": 143
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37897167897268,
+          -7.7681743155486345
+        ]
+      },
+      "properties": {
+        "FID": 148,
+        "nama_fitur": "Kantor Dewan Guru Besar",
+        "lantai": 2,
+        "ketinggian": 5.25,
+        "tinggi_das": 4.75,
+        "warna": "orange",
+        "id_jalur": 557
+      },
+      "id": 148
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37804696305227,
+          -7.76782418361158
+        ]
+      },
+      "properties": {
+        "FID": 158,
+        "nama_fitur": "Musala",
+        "lantai": 2,
+        "ketinggian": 5.25,
+        "tinggi_das": 4.75,
+        "warna": "indigo",
+        "id_jalur": 416
+      },
+      "id": 158
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37801666204757,
+          -7.767923529659939
+        ]
+      },
+      "properties": {
+        "FID": 162,
+        "nama_fitur": "Kantor Wakil Rektor",
+        "lantai": 2,
+        "ketinggian": 5.25,
+        "tinggi_das": 4.75,
+        "warna": "indigo",
+        "id_jalur": 418
+      },
+      "id": 162
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37793686489431,
+          -7.768011488546165
+        ]
+      },
+      "properties": {
+        "FID": 171,
+        "nama_fitur": "Sayap selatan barat daya KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 508
+      },
+      "id": 171
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37788980799803,
+          -7.7681657129806325
+        ]
+      },
+      "properties": {
+        "FID": 172,
+        "nama_fitur": "Sayap selatan barat daya KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 507
+      },
+      "id": 172
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37828636626318,
+          -7.768227879467645
+        ]
+      },
+      "properties": {
+        "FID": 174,
+        "nama_fitur": "Sayap selatan KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 105
+      },
+      "id": 174
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37857376084776,
+          -7.768314453958936
+        ]
+      },
+      "properties": {
+        "FID": 175,
+        "nama_fitur": "Sayap selatan KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 109
+      },
+      "id": 175
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3789146744673,
+          -7.768357031625513
+        ]
+      },
+      "properties": {
+        "FID": 219,
+        "nama_fitur": "Sayap selatan tenggara KM laki-laki",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 424
+      },
+      "id": 219
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37889837493185,
+          -7.768408064679363
+        ]
+      },
+      "properties": {
+        "FID": 220,
+        "nama_fitur": "Sayap selatan tenggara KM perempuan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 425
+      },
+      "id": 220
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37852168345512,
+          -7.768196540995788
+        ]
+      },
+      "properties": {
+        "FID": 246,
+        "nama_fitur": "Kantor Bagian Hubungan Kelembagaan",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "navy",
+        "id_jalur": 465
+      },
+      "id": 246
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37812978926183,
+          -7.7680801111542905
+        ]
+      },
+      "properties": {
+        "FID": 256,
+        "nama_fitur": "Direktorat Kemitraan, Alumni, dan Urusan Internasional dan Direktorat Pengembangan Usaha dan Inkubasi",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "green",
+        "id_jalur": 480
+      },
+      "id": 256
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3784177395446,
+          -7.768309689475743
+        ]
+      },
+      "properties": {
+        "FID": 262,
+        "nama_fitur": "Kantor Jaminan Mutu",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "maroon",
+        "id_jalur": 475
+      },
+      "id": 262
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37881694371026,
+          -7.768286011435265
+        ]
+      },
+      "properties": {
+        "FID": 281,
+        "nama_fitur": "Direktorat Aset",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "magenta",
+        "id_jalur": 426
+      },
+      "id": 281
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3791140501412,
+          -7.767900697697044
+        ]
+      },
+      "properties": {
+        "FID": 5,
+        "nama_fitur": "Sayap utara timur laut KM perempuan",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 407
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37907607397074,
+          -7.767832815057375
+        ]
+      },
+      "properties": {
+        "FID": 6,
+        "nama_fitur": "Sayap utara timur laut KM laki-laki",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 408
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37911179696425,
+          -7.767895667665371
+        ]
+      },
+      "properties": {
+        "FID": 21,
+        "nama_fitur": "Pusat Pengadaan dan Logistik",
+        "lantai": 3,
+        "ketinggian": 9.5,
+        "tinggi_das": 9,
+        "warna": "tomato",
+        "id_jalur": 228
+      },
+      "id": 21
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3788240657858,
+          -7.767802149135932
+        ]
+      },
+      "properties": {
+        "FID": 40,
+        "nama_fitur": "Direktorat Perencanaan",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "teal",
+        "id_jalur": 387
+      },
+      "id": 40
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37891470787326,
+          -7.768358579838093
+        ]
+      },
+      "properties": {
+        "FID": 66,
+        "nama_fitur": "Sayap selatan tenggara KM laki-laki",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 326
+      },
+      "id": 66
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37889651305659,
+          -7.7684212994684145
+        ]
+      },
+      "properties": {
+        "FID": 67,
+        "nama_fitur": "Sayap selatan tenggara KM perempuan",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 327
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37878273004912,
+          -7.76827490101455
+        ]
+      },
+      "properties": {
+        "FID": 76,
+        "nama_fitur": "Direktorat Penelitian LPPM",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "tan",
+        "id_jalur": 328
+      },
+      "id": 76
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37809761417452,
+          -7.768068956135309
+        ]
+      },
+      "properties": {
+        "FID": 114,
+        "nama_fitur": "Pusat Inovasi dan Kajian Akademik",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "moccasin",
+        "id_jalur": 347
+      },
+      "id": 114
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3779570234077,
+          -7.768139270778391
+        ]
+      },
+      "properties": {
+        "FID": 124,
+        "nama_fitur": "Sayap selatan barat daya KM perempuan",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 362
+      },
+      "id": 124
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37797199493184,
+          -7.768075121496224
+        ]
+      },
+      "properties": {
+        "FID": 125,
+        "nama_fitur": "Sayap selatan barat daya KM laki-laki",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 361
+      },
+      "id": 125
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37809342700905,
+          -7.767661628105216
+        ]
+      },
+      "properties": {
+        "FID": 146,
+        "nama_fitur": "Badan Penerbit dan Publikasi",
+        "lantai": 3,
+        "ketinggian": 9.5,
+        "tinggi_das": 9,
+        "warna": "lime",
+        "id_jalur": 367
+      },
+      "id": 146
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3784562882388,
+          -7.767684563890498
+        ]
+      },
+      "properties": {
+        "FID": 162,
+        "nama_fitur": "Sayap utara Kamar Mandi",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 255
+      },
+      "id": 162
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37836063413556,
+          -7.767657104832367
+        ]
+      },
+      "properties": {
+        "FID": 163,
+        "nama_fitur": "RM Ruang Multimedia",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "salmon",
+        "id_jalur": 381
+      },
+      "id": 163
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37813278410476,
+          -7.767551179153841
+        ]
+      },
+      "properties": {
+        "FID": 181,
+        "nama_fitur": "Sayap utara barat laut KM perempuan",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 377
+      },
+      "id": 181
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37814951038717,
+          -7.767489029260304
+        ]
+      },
+      "properties": {
+        "FID": 182,
+        "nama_fitur": "Sayap utara barat laut KM laki-laki",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 378
+      },
+      "id": 182
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37915928119855,
+          -7.767744697677969
+        ]
+      },
+      "properties": {
+        "FID": 0,
+        "nama_fitur": "Sayap utara timur laut Dapur",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 601
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37806511222334,
+          -7.767584427078276
+        ]
+      },
+      "properties": {
+        "FID": 78,
+        "nama_fitur": "Sayap utara barat laut Gudang",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 561
+      },
+      "id": 78
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37811142423755,
+          -7.767429821979562
+        ]
+      },
+      "properties": {
+        "FID": 79,
+        "nama_fitur": "Sayap utara barat laut Dapur",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 562
+      },
+      "id": 79
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37893868906872,
+          -7.768478983679401
+        ]
+      },
+      "properties": {
+        "FID": 260,
+        "nama_fitur": "Sayap selatan tenggara Dapur",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 604
+      },
+      "id": 260
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37898224413561,
+          -7.7683245286252145
+        ]
+      },
+      "properties": {
+        "FID": 276,
+        "nama_fitur": "Sayap selatan tenggara Gudang",
+        "lantai": 1,
+        "ketinggian": 2.25,
+        "tinggi_das": 0,
+        "warna": "khaki",
+        "id_jalur": 603
+      },
+      "id": 276
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37915788424334,
+          -7.7677294550741465
+        ]
+      },
+      "properties": {
+        "FID": 0,
+        "nama_fitur": "Sayap utara timur laut Dapur",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 546
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37810991793049,
+          -7.767424412854396
+        ]
+      },
+      "properties": {
+        "FID": 37,
+        "nama_fitur": "Sayap utara barat laut Gudang",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 510
+      },
+      "id": 37
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37793879211233,
+          -7.768009491164634
+        ]
+      },
+      "properties": {
+        "FID": 168,
+        "nama_fitur": "Sayap selatan barat daya Gudang",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 420
+      },
+      "id": 168
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37898470301434,
+          -7.768322270982253
+        ]
+      },
+      "properties": {
+        "FID": 216,
+        "nama_fitur": "Sayap selatan tenggara Gudang",
+        "lantai": 2,
+        "ketinggian": 6.5,
+        "tinggi_das": 6,
+        "warna": "khaki",
+        "id_jalur": 422
+      },
+      "id": 216
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37916725553453,
+          -7.767745877903522
+        ]
+      },
+      "properties": {
+        "FID": 0,
+        "nama_fitur": "Sayap utara timur laut Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 409
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37911849568945,
+          -7.767900934486761
+        ]
+      },
+      "properties": {
+        "FID": 3,
+        "nama_fitur": "Sayap utara timur laut Dapur",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 410
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37899021801161,
+          -7.768324981864978
+        ]
+      },
+      "properties": {
+        "FID": 63,
+        "nama_fitur": "Sayap selatan tenggara Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 324
+      },
+      "id": 63
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3789422963132,
+          -7.768480471254122
+        ]
+      },
+      "properties": {
+        "FID": 64,
+        "nama_fitur": "Sayap selatan tenggara Dapur",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 325
+      },
+      "id": 64
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37855727948318,
+          -7.768354012750677
+        ]
+      },
+      "properties": {
+        "FID": 73,
+        "nama_fitur": "Barat Direktorat Penelitian Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 206
+      },
+      "id": 73
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37829655203632,
+          -7.768225787126852
+        ]
+      },
+      "properties": {
+        "FID": 95,
+        "nama_fitur": "Timur PIKA Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "violet",
+        "id_jalur": 1000
+      },
+      "id": 95
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37788468869348,
+          -7.768162132928424
+        ]
+      },
+      "properties": {
+        "FID": 116,
+        "nama_fitur": "Sayap selatan barat daya Dapur",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 364
+      },
+      "id": 116
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37793143673707,
+          -7.768007222614614
+        ]
+      },
+      "properties": {
+        "FID": 132,
+        "nama_fitur": "Sayap selatan barat daya Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 363
+      },
+      "id": 132
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3780556983586,
+          -7.767578912989421
+        ]
+      },
+      "properties": {
+        "FID": 153,
+        "nama_fitur": "Sayap utara barat laut Dapur",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 375
+      },
+      "id": 153
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.378105113924,
+          -7.767427154416254
+        ]
+      },
+      "properties": {
+        "FID": 161,
+        "nama_fitur": "Sayap utara barat laut Gudang",
+        "lantai": 3,
+        "ketinggian": 11.25,
+        "tinggi_das": 10.75,
+        "warna": "khaki",
+        "id_jalur": 376
+      },
+      "id": 161
+    }
+  ]
+}

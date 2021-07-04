@@ -154,7 +154,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar  elevation-4" style="background-color: #FDCB2C;">
       <!-- Brand Logo -->
-      <a href="../index.html" class="brand-link">
+      <a href="/index.html" class="brand-link">
         <img src="../../dist/img/subs/ugm.png" alt="Logo UGM" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">Gedung Pusat UGM</span>
@@ -171,7 +171,7 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="../index.html" class="nav-link">
+              <a href="./index.html" class="nav-link">
                 <img src="../../dist/img/subs/home.png" width="22px" alt="icon_home">
                 <p>
                   Beranda
@@ -1137,18 +1137,6 @@
 
     });
 
-    // New keyboard functions ------------- end -------------
-
-    map.addControl(new mapboxgl.NavigationControl());
-    map.addControl(
-      new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true
-        },
-        trackUserLocation: true
-      })
-    );
-
     /* map.on('click', function(e) {
       document.getElementById('lngLatText').innerHTML =
         JSON.stringify(e.lngLat.wrap());
@@ -1371,45 +1359,64 @@
         .addTo(map);
     });
 
-    $.getJSON('../../docs/L3Sivitas.geojson', (data) => {
-
-      data.features = data.features.filter(feature => feature.properties.nama_fitur);
-      console.log(JSON.stringify(data));
 
 
-      function forwardGeocoder(query) {
-        var matchingFeatures = [];
-        for (var i = 0; i < 5; i++) {
-          var feature = data.features[i];
-// Handle queries with different capitalization
-// than the source data by calling toLowerCase().
-          if (
-                  feature.properties.nama_fitur
-                          .toLowerCase()
-                          .search(query.toLowerCase()) !== -1
-          ) {
-// Add a tree emoji as a prefix for custom
-// data results using carmen geojson format:
-// https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
-            feature['place_name'] = '🌲 ' + feature.properties.nama_fitur;
-            feature['center'] = feature.geometry.coordinates;
-            feature['place_type'] = ['park'];
-            console.log('pitur', feature);
-            matchingFeatures.push(feature);
+    $.getJSON('../../docs/SivitasGeocoder.geojson', (lantai1) => {
+          const data = lantai1;
+
+          function forwardGeocoder(query) {
+            var matchingFeatures = [];
+            for (var i = 0; i < data.features.length; i++) {
+              var feature = data.features[i];
+              // Handle queries with different capitalization
+              // than the source data by calling toLowerCase().
+              if (
+                      feature.properties.nama_fitur
+                              .toLowerCase()
+                              .search(query.toLowerCase()) !== -1
+              ) {
+                // Add a tree emoji as a prefix for custom
+                // data results using carmen geojson format:
+                // https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+                feature['place_name'] = feature.properties.nama_fitur;
+                feature['center'] = feature.geometry.coordinates;
+                feature['place_type'] = ['park'];
+                feature['lantai'] = feature.properties.lantai;
+                matchingFeatures.push(feature);
+              }
+            }
+            return matchingFeatures;
           }
-        }
-        return matchingFeatures;
-      }
 
-      map.addControl(
-              new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                localGeocoder: forwardGeocoder,
-                mapboxgl: mapboxgl,
-                placeholder: 'Masukkan namanya'
-              })
-      );
-    });
+          const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            localGeocoder: forwardGeocoder,
+            bbox: [110.37254, -7.7779, 110.37255, -7.7778],
+            mapboxgl: mapboxgl,
+            placeholder: 'Masukkan Nama Area',
+            zoom: 20,
+          });
+
+          map.addControl(geocoder);
+
+          geocoder.on('result', (event) => {
+            const {result} = event;
+            const {lantai} = result;
+            showOneLantaiOnly(lantai);
+          });
+
+          // New keyboard functions ------------- end -------------
+
+          map.addControl(new mapboxgl.NavigationControl());
+          map.addControl(
+                  new mapboxgl.GeolocateControl({
+                    positionOptions: {
+                      enableHighAccuracy: true
+                    },
+                    trackUserLocation: true
+                  })
+          );
+        });
   </script>
 </body>
 
